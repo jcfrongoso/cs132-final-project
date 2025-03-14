@@ -1,9 +1,9 @@
 <script>
+	import '../app.css';
 	import './index.css';
-	import Navbar from './Navbar.svelte';
+	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 
-	import '../app.css';
 	let { children } = $props();
 
 </script>
@@ -14,9 +14,8 @@
     <meta property="og:image" content="" />
 </svelte:head> -->
 
-<Navbar />
-
-<main>
+<Header />
+<main class="container">
 	{@render children()}
 </main>
 <Footer />

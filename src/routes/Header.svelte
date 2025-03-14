@@ -7,7 +7,7 @@
     ]
 </script>
 
-<header>
+<header class="sticky top-0 bg-blue-200">
     <nav>
         <ul class="flex justify-center">
             {#each nav_items as item}

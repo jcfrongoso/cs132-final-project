@@ -2,8 +2,8 @@
     const content = [
         {
             name:               "Justin Clyde Frongoso",
-            profile_picture:    "teehee",
-            about:              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel facilisis lorem. Aenean tincidunt nisl felis, in egestas lectus tincidunt quis. Morbi suscipit at lacus eu viverra. Phasellus volutpat pellentesque ligula, quis imperdiet odio faucibus nec. Curabitur at vulputate leo. Nullam id. ",
+            profile_picture:    "ujin",
+            about:              "a g ",
         },
         {
             name:               "Michael Sean Brian Omisol",

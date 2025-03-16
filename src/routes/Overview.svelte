@@ -7,6 +7,5 @@
     <p class="mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nunc a ipsum sollicitudin hendrerit. Proin auctor ullamcorper mollis. Nunc felis quam, iaculis a eleifend id, facilisis ac est. Nam feugiat sed mi a accumsan. Cras eu tortor et neque rhoncus porta quis quis diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eu ipsum et metus hendrerit finibus vel sed odio. Duis tempus condimentum metus in commodo. Nulla hendrerit tortor mauris, porttitor ultrices lacus convallis sit amet. Phasellus lorem ligula, viverra non commodo ut, pharetra sit amet dolor. Duis faucibus enim fringilla lorem convallis congue. Integer ullamcorper arcu et leo congue tincidunt. Pellentesque velit risus, faucibus ac sapien semper, faucibus feugiat velit. Phasellus bibendum varius est id mattis. Vestibulum sem nunc, ornare in risus in, elementum maximus elit. Etiam elementum, erat pulvinar maximus viverra, felis lectus maximus turpis, eget facilisis mi lacus non nisi. 
     </p>
-    <iframe src="/data-preprocessing-proper.html" width="100%" height="600px"></iframe>
 
 </div>

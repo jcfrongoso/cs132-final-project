@@ -2,7 +2,7 @@
     const content = [
         {
             name:               "Justin Clyde Frongoso",
-            profile_picture:    "ujin",
+            profile_picture:    "teehee",
             about:              "a g ",
         },
         {

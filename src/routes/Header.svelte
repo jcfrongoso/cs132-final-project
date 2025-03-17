@@ -11,7 +11,9 @@
     <nav>
         <ul class="flex justify-center">
             {#each nav_items as item}
-            <a class="block p-4 transition-colors" href="#{item}">{item}</a>
+            <li>
+                <a class="block p-4 transition-colors" href="#{item}">{item}</a>
+            </li>
             {/each}
         </ul>
     </nav>

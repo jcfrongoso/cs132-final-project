@@ -1,3 +1,21 @@
+<script>
+    let counter = 0;
+    let increment = () => {
+        counter++;
+        return counter;
+    }
+    const references = [
+        "https://www.fao.org/fishery/en/countrysector/naso_philippines",
+        "https://psa.gov.ph/statistics/fisheries-situationer",
+        "https://www.bfar.da.gov.ph/2024/02/07/bfar-eyes-100-food-fish-sufficiency-by-2028/",
+        "https://ispweb.pcaarrd.dost.gov.ph/philippine-fisheries-dynamics-market-shifts-aquaculture-update-sovereignty-concerns-solar-projects-and-project-lead/",
+        "https://earthjournalism.net/stories/rich-seas-poor-fishers-the-impact-of-fisheries-subsidies-in-the-philippines",
+        "https://dergipark.org.tr/en/download/article-file/1793345",
+
+    ]
+</script>
+
+
 <div class="max-w-5xl mx-auto">
     <h1 class="mb-4">Overview</h1>
     <p class="mb-4">
@@ -5,7 +23,22 @@
     </p>
     <h2 class="mb-2">Rationale</h2>
     <p class="mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nunc a ipsum sollicitudin hendrerit. Proin auctor ullamcorper mollis. Nunc felis quam, iaculis a eleifend id, facilisis ac est. Nam feugiat sed mi a accumsan. Cras eu tortor et neque rhoncus porta quis quis diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eu ipsum et metus hendrerit finibus vel sed odio. Duis tempus condimentum metus in commodo. Nulla hendrerit tortor mauris, porttitor ultrices lacus convallis sit amet. Phasellus lorem ligula, viverra non commodo ut, pharetra sit amet dolor. Duis faucibus enim fringilla lorem convallis congue. Integer ullamcorper arcu et leo congue tincidunt. Pellentesque velit risus, faucibus ac sapien semper, faucibus feugiat velit. Phasellus bibendum varius est id mattis. Vestibulum sem nunc, ornare in risus in, elementum maximus elit. Etiam elementum, erat pulvinar maximus viverra, felis lectus maximus turpis, eget facilisis mi lacus non nisi. 
+        There are three fisheries sectors in the Philippines: municipal fisheries, commercial fisheries, and aquaculture.
+    </p>
+    <p class="mb-4">
+        As of 2024, <strong>approximately 64.1%</strong> of the total volume of fisheries productions comes from aquaculture, contributing 683,934.30 Metric Tons of production. Despite a -7.3% decrease of production from 2023 to 2024, aquaculture still remains effective as a constant and reliable source of fish, especially for a country that subsists on a fish-based protein diet.
+    </p>
+    <p class="mb-4">
+        An attribution to its rising increase of production are due to overfishing and illegal fishing practices that destroy marine environment, which leads to less hauls for other fisheries sectors. This also includes rising sovereignity tensions between the Philippines and the China for control of the West Philippine Sea, driving away local fishers from their designated areas. This, in turn, creates a need for adaptation to aquaculture practices.
+    </p>
+    <p class="mb-4">
+        The United Nation's Food and Agriculture Organization (FAO) report titled "<em>The State of World Fisheries and Aquaculture 2024</em>" released in June 2024 also highlights Philippines as one of the few nations to dominate the global aquaculture industry. In order for the Philippines to capitalize future positive market implications, the shift towards aquaculture requires proper investments in infrastructure, training for local fishermen to transition smoothly and sustainably from recent events, and finding specific trends that will boost existing aquaculture production.
+    </p>
+    <p class="mb-4">
+        <em>References:</em>
+        {#each references as item}
+            <a href="{item}">[{increment()}]</a>
+        {/each}
     </p>
 
 </div>

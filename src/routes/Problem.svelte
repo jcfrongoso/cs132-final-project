@@ -16,8 +16,8 @@
         },
         {
             question:   "Is there a significant relationship between the value and volume aquaculture systems here in the Philippines?",
-            null:       "Yep.",
-            alternate:  "Nah.",
+            null:       "",
+            alternate:  "",
         },
         {
             question:   "What factors could cause significant changes in trend variations for the aquaculture system in the Philippines?",
@@ -36,8 +36,8 @@
         },
         {
             question:   "Should we invest more in the growth of aquaculture here in the Philippines?",
-            null:       "Yep.",
-            alternate:  "Nah.",
+            null:       "",
+            alternate:  "",
         },
     ];
 </script>

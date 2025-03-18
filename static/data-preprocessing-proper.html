@@ -7509,7 +7509,80 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Part-0.-Dataset-Preparation">Part 0. Dataset Preparation<a class="anchor-link" href="#Part-0.-Dataset-Preparation">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Data-Collection">Data Collection<a class="anchor-link" href="#Data-Collection">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This part of the methodology involves dataset preparation. First of all, the dataset was downloaded from PSA OpenStat's Open Source website. From the main page, we navigate towards <code>Agriculture, Forestry, and Fisheries</code> &gt; <code>Fisheries</code>. We then scroll downwards to find <a href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0092E4GVAP1.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t">Aquaculture: Volume of Production by Species, Geolocation, Year and Quarter</a> and <a href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0102E4GCAP1.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t">Aquaculture: Value of Production by Species, Geolocation, Year and Quarter</a>. To extract the necessary information for each table, the group performed the following steps:</p>
+<ol>
+<li>Under <code>Species</code>, we select all by clicking the check button.</li>
+<li>Under <code>Geolocation</code>, type and enter <code>Region</code> to select all region as the values for our <code>Geolocation</code> feature.</li>
+<li>Under <code>Year</code>, we only select those from 2020 to 2024.</li>
+<li>Under <code>Quarter</code>, we only choose to include Quarter 1 to Quarter 4.</li>
+<li>Download the table in <code>csv</code> format.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now that we have downloaded two datasets, we now proceed to preprocessing our dataset to transform it into something workable for our analysis.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Data-Preprocessing">Data Preprocessing<a class="anchor-link" href="#Data-Preprocessing">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We first import all necessary libraries and check the preliminary contents of each dataset. Note though that both datasets contains the same set of columns, as indicated from the options we've included from the data collection part which means that we can redo the same set of steps that will be done on one dataset to the other.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7526,39 +7599,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">'./Dataset/'</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['Aquaculture Value and Volume of Production - Merged CSV.csv', 'Aquaculture Value of Production by Species, Geolocation, Year and Quarter.csv', 'Aquaculture Volume of Production by Species, Geolocation, Year and Quarter.csv']
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">aquaculture_value</span> <span class="o">=</span> <span class="s1">'./Dataset/Aquaculture Value of Production by Species, Geolocation, Year and Quarter.csv'</span>
@@ -7578,7 +7624,18 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Value-Dataframe-Check">Value Dataframe Check<a class="anchor-link" href="#Value-Dataframe-Check">¶</a></h2>
+<h3 id="Value-Dataset-Preprocessing">Value Dataset Preprocessing<a class="anchor-link" href="#Value-Dataset-Preprocessing">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We check the first five values of the <code>Value</code> dataset and some basic statistics and summary.</p>
 </div>
 </div>
 </div>
@@ -7587,7 +7644,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -7601,7 +7658,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7778,7 +7835,88 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(340, 22)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 340 entries, 0 to 339
+Data columns (total 22 columns):
+ #   Column          Non-Null Count  Dtype 
+---  ------          --------------  ----- 
+ 0   Species         340 non-null    object
+ 1   Geolocation     340 non-null    object
+ 2   2020 Quarter 1  340 non-null    object
+ 3   2020 Quarter 2  340 non-null    object
+ 4   2020 Quarter 3  340 non-null    object
+ 5   2020 Quarter 4  340 non-null    object
+ 6   2021 Quarter 1  340 non-null    object
+ 7   2021 Quarter 2  340 non-null    object
+ 8   2021 Quarter 3  340 non-null    object
+ 9   2021 Quarter 4  340 non-null    object
+ 10  2022 Quarter 1  340 non-null    object
+ 11  2022 Quarter 2  340 non-null    object
+ 12  2022 Quarter 3  340 non-null    object
+ 13  2022 Quarter 4  340 non-null    object
+ 14  2023 Quarter 1  340 non-null    object
+ 15  2023 Quarter 2  340 non-null    object
+ 16  2023 Quarter 3  340 non-null    object
+ 17  2023 Quarter 4  340 non-null    object
+ 18  2024 Quarter 1  340 non-null    object
+ 19  2024 Quarter 2  340 non-null    object
+ 20  2024 Quarter 3  340 non-null    object
+ 21  2024 Quarter 4  340 non-null    object
+dtypes: object(22)
+memory usage: 58.6+ KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -7792,7 +7930,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7940,15 +8078,28 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Note from the <code>info()</code> summary above, there seems to be something that misleads us about the summary of the dataset since based on the <code>describe()</code> cell, the <code>top</code> value (most frequent) on the Year-Quarter columns is <code>..</code>. This string doesn't correspond to a valid quantitative value which may mean that it might pertain to a <code>NULL</code> value instead. We verify the count of the <code>..</code> string if this is indeed the case but before that, we first verify if the <code>Species</code> and <code>Geolocation</code> columns are consistent.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -7958,11 +8109,37 @@ a.anchor-link {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(340, 22)</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>['All Species' '..Milkfish' '..Tilapia' '..Tiger Prawn' '..Mudcrab'
+ '..Endeavor Prawn' '..White Shrimp' '..Grouper' '..Siganid'
+ '..P. Vannamei' '..Spiny Lobster' '..Carp' '..Catfish' '..Gourami'
+ '..Mudfish' '..Freshwater Prawn' '..Others' '..Oyster' '..Mussel'
+ '..Seaweed']
+['..National Capital Region (NCR)'
+ '..Cordillera Administrative Region (CAR)' '..Region I (Ilocos Region)'
+ '..Region II (Cagayan Valley)' '..Region III (Central Luzon)'
+ '..Region IV-A (CALABARZON)' '..MIMAROPA Region'
+ '..Region V (Bicol Region)' '..Region VI (Western Visayas)'
+ '..Region VII (Central Visayas)' '..Region VIII (Eastern Visayas)'
+ '..Region IX (Zamboanga Peninsula)' '..Region X (Nothern Mindanao)'
+ '..Region XI (Davao Region)' '..Region XII (SOCCSKSARGEN)'
+ '..Region XIII (Caraga)'
+ '..Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)']
+</pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Since they all refer to valid specie and location, we can proceed to the Year-Quarter combinations.</p>
 </div>
 </div>
 </div>
@@ -7971,10 +8148,14 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">columns</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">year_quarter_cols</span> <span class="o">=</span> <span class="n">value_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">year_quarter_cols</span><span class="p">:</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="n">value_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'..'</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">filtered_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> / </span><span class="si">{</span><span class="n">value_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">filtered_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">value_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7984,16 +8165,55 @@ a.anchor-link {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>Index(['Species', 'Geolocation', '2020 Quarter 1', '2020 Quarter 2',
-       '2020 Quarter 3', '2020 Quarter 4', '2021 Quarter 1', '2021 Quarter 2',
-       '2021 Quarter 3', '2021 Quarter 4', '2022 Quarter 1', '2022 Quarter 2',
-       '2022 Quarter 3', '2022 Quarter 4', '2023 Quarter 1', '2023 Quarter 2',
-       '2023 Quarter 3', '2023 Quarter 4', '2024 Quarter 1', '2024 Quarter 2',
-       '2024 Quarter 3', '2024 Quarter 4'],
-      dtype='object')</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2020 Quarter 1: 99 / 340
+2020 Quarter 2: 96 / 340
+2020 Quarter 3: 97 / 340
+2020 Quarter 4: 94 / 340
+2021 Quarter 1: 100 / 340
+2021 Quarter 2: 98 / 340
+2021 Quarter 3: 102 / 340
+2021 Quarter 4: 91 / 340
+2022 Quarter 1: 90 / 340
+2022 Quarter 2: 98 / 340
+2022 Quarter 3: 92 / 340
+2022 Quarter 4: 93 / 340
+2023 Quarter 1: 86 / 340
+2023 Quarter 2: 89 / 340
+2023 Quarter 3: 101 / 340
+2023 Quarter 4: 101 / 340
+2024 Quarter 1: 102 / 340
+2024 Quarter 2: 89 / 340
+2024 Quarter 3: 100 / 340
+2024 Quarter 4: 91 / 340
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>As we can see, a decent amount of samples contain <code>NULL</code> values under each Year-Quarter columns. Before we impute, we first transform each <code>..</code> string into <code>NULL</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">'..'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -8003,7 +8223,235 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">year_quarter_cols</span><span class="p">:</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="n">value_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'..'</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">filtered_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> / </span><span class="si">{</span><span class="n">value_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2020 Quarter 1: 0 / 340
+2020 Quarter 2: 0 / 340
+2020 Quarter 3: 0 / 340
+2020 Quarter 4: 0 / 340
+2021 Quarter 1: 0 / 340
+2021 Quarter 2: 0 / 340
+2021 Quarter 3: 0 / 340
+2021 Quarter 4: 0 / 340
+2022 Quarter 1: 0 / 340
+2022 Quarter 2: 0 / 340
+2022 Quarter 3: 0 / 340
+2022 Quarter 4: 0 / 340
+2023 Quarter 1: 0 / 340
+2023 Quarter 2: 0 / 340
+2023 Quarter 3: 0 / 340
+2023 Quarter 4: 0 / 340
+2024 Quarter 1: 0 / 340
+2024 Quarter 2: 0 / 340
+2024 Quarter 3: 0 / 340
+2024 Quarter 4: 0 / 340
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 340 entries, 0 to 339
+Data columns (total 22 columns):
+ #   Column          Non-Null Count  Dtype 
+---  ------          --------------  ----- 
+ 0   Species         340 non-null    object
+ 1   Geolocation     340 non-null    object
+ 2   2020 Quarter 1  241 non-null    object
+ 3   2020 Quarter 2  244 non-null    object
+ 4   2020 Quarter 3  243 non-null    object
+ 5   2020 Quarter 4  246 non-null    object
+ 6   2021 Quarter 1  240 non-null    object
+ 7   2021 Quarter 2  242 non-null    object
+ 8   2021 Quarter 3  238 non-null    object
+ 9   2021 Quarter 4  249 non-null    object
+ 10  2022 Quarter 1  250 non-null    object
+ 11  2022 Quarter 2  242 non-null    object
+ 12  2022 Quarter 3  248 non-null    object
+ 13  2022 Quarter 4  247 non-null    object
+ 14  2023 Quarter 1  254 non-null    object
+ 15  2023 Quarter 2  251 non-null    object
+ 16  2023 Quarter 3  239 non-null    object
+ 17  2023 Quarter 4  239 non-null    object
+ 18  2024 Quarter 1  238 non-null    object
+ 19  2024 Quarter 2  251 non-null    object
+ 20  2024 Quarter 3  240 non-null    object
+ 21  2024 Quarter 4  249 non-null    object
+dtypes: object(22)
+memory usage: 58.6+ KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can now proceed to imputation since we now have valid <code>NULL</code> values. For imputation, we first identify if utilizing the mean of each time series data for each <code>Species</code> - <code>Geolocation</code> combination could affect the output.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">KNNImputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">impute_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">labeled_species</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">labeled_geo</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+
+<span class="n">impute_df</span><span class="p">[</span><span class="s1">'Species_encoded'</span><span class="p">]</span> <span class="o">=</span> <span class="n">labeled_species</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">impute_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">])</span>
+<span class="n">impute_df</span><span class="p">[</span><span class="s1">'Geolocation_encoded'</span><span class="p">]</span> <span class="o">=</span> <span class="n">labeled_geo</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">impute_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">])</span>
+
+<span class="n">knn_features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
+    <span class="n">impute_df</span><span class="p">[[</span><span class="s1">'Species_encoded'</span><span class="p">,</span> <span class="s1">'Geolocation_encoded'</span><span class="p">]]</span>
+<span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">year_quarter_cols</span><span class="p">:</span>
+    <span class="n">knn_imputer</span> <span class="o">=</span> <span class="n">KNNImputer</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">imputed_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+        <span class="n">knn_imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">knn_features</span><span class="p">,</span> <span class="n">impute_df</span><span class="p">[[</span><span class="n">col</span><span class="p">]]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)),</span>
+        <span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">knn_features</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="n">col</span><span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="n">value_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputed_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 340 entries, 0 to 339
+Data columns (total 22 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Species         340 non-null    object 
+ 1   Geolocation     340 non-null    object 
+ 2   2020 Quarter 1  340 non-null    float64
+ 3   2020 Quarter 2  340 non-null    float64
+ 4   2020 Quarter 3  340 non-null    float64
+ 5   2020 Quarter 4  340 non-null    float64
+ 6   2021 Quarter 1  340 non-null    float64
+ 7   2021 Quarter 2  340 non-null    float64
+ 8   2021 Quarter 3  340 non-null    float64
+ 9   2021 Quarter 4  340 non-null    float64
+ 10  2022 Quarter 1  340 non-null    float64
+ 11  2022 Quarter 2  340 non-null    float64
+ 12  2022 Quarter 3  340 non-null    float64
+ 13  2022 Quarter 4  340 non-null    float64
+ 14  2023 Quarter 1  340 non-null    float64
+ 15  2023 Quarter 2  340 non-null    float64
+ 16  2023 Quarter 3  340 non-null    float64
+ 17  2023 Quarter 4  340 non-null    float64
+ 18  2024 Quarter 1  340 non-null    float64
+ 19  2024 Quarter 2  340 non-null    float64
+ 20  2024 Quarter 3  340 non-null    float64
+ 21  2024 Quarter 4  340 non-null    float64
+dtypes: float64(20), object(2)
+memory usage: 58.6+ KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now that we're done with the imputation, we can now proceed in standardizing column values and dataset formatting. Since we're done preprocessing the values for the values for each year-quarter combination, we proceed to preprocessing the values for the <code>Species</code> and <code>Geolocation</code> columns.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8017,7 +8465,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['All Species', '..Milkfish', '..Tilapia', '..Tiger Prawn',
        '..Mudcrab', '..Endeavor Prawn', '..White Shrimp', '..Grouper',
@@ -8028,29 +8476,69 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'All Species'</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array(['..National Capital Region (NCR)',
+       '..Cordillera Administrative Region (CAR)',
+       '..Region I (Ilocos Region)', '..Region II (Cagayan Valley)',
+       '..Region III (Central Luzon)', '..Region IV-A (CALABARZON)',
+       '..MIMAROPA Region', '..Region V (Bicol Region)',
+       '..Region VI (Western Visayas)', '..Region VII (Central Visayas)',
+       '..Region VIII (Eastern Visayas)',
+       '..Region IX (Zamboanga Peninsula)',
+       '..Region X (Nothern Mindanao)', '..Region XI (Davao Region)',
+       '..Region XII (SOCCSKSARGEN)', '..Region XIII (Caraga)',
+       '..Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)'],
+      dtype=object)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Since the list is exhaustible, we can see that the formatting for each <code>Species</code> and <code>Geolocation</code> values are not standardized.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">remove_dots</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">string</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'..'</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="k">return</span> <span class="n">string</span>
+
+<span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_dots</span><span class="p">)</span>
+<span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_dots</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8061,7 +8549,109 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array(['All Species', 'Milkfish', 'Tilapia', 'Tiger Prawn', 'Mudcrab',
+       'Endeavor Prawn', 'White Shrimp', 'Grouper', 'Siganid',
+       'P. Vannamei', 'Spiny Lobster', 'Carp', 'Catfish', 'Gourami',
+       'Mudfish', 'Freshwater Prawn', 'Others', 'Oyster', 'Mussel',
+       'Seaweed'], dtype=object)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array(['National Capital Region (NCR)',
+       'Cordillera Administrative Region (CAR)',
+       'Region I (Ilocos Region)', 'Region II (Cagayan Valley)',
+       'Region III (Central Luzon)', 'Region IV-A (CALABARZON)',
+       'MIMAROPA Region', 'Region V (Bicol Region)',
+       'Region VI (Western Visayas)', 'Region VII (Central Visayas)',
+       'Region VIII (Eastern Visayas)', 'Region IX (Zamboanga Peninsula)',
+       'Region X (Nothern Mindanao)', 'Region XI (Davao Region)',
+       'Region XII (SOCCSKSARGEN)', 'Region XIII (Caraga)',
+       'Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)'],
+      dtype=object)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Also, the formatting of the dataset is in wide format. We fix this by making it long so that it would be suitable for time series analysis.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="o">.</span><span class="n">melt</span><span class="p">([</span><span class="s1">'Species'</span><span class="p">,</span> <span class="s1">'Geolocation'</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">"Year-Quarter"</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">"Value"</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now, our dataset looks like the following.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8075,7 +8665,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8097,152 +8687,76 @@ a.anchor-link {
 <th></th>
 <th>Species</th>
 <th>Geolocation</th>
-<th>2020 Quarter 1</th>
-<th>2020 Quarter 2</th>
-<th>2020 Quarter 3</th>
-<th>2020 Quarter 4</th>
-<th>2021 Quarter 1</th>
-<th>2021 Quarter 2</th>
-<th>2021 Quarter 3</th>
-<th>2021 Quarter 4</th>
-<th>...</th>
-<th>2022 Quarter 3</th>
-<th>2022 Quarter 4</th>
-<th>2023 Quarter 1</th>
-<th>2023 Quarter 2</th>
-<th>2023 Quarter 3</th>
-<th>2023 Quarter 4</th>
-<th>2024 Quarter 1</th>
-<th>2024 Quarter 2</th>
-<th>2024 Quarter 3</th>
-<th>2024 Quarter 4</th>
+<th>Year-Quarter</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th>17</th>
-<td>Milkfish</td>
-<td>..National Capital Region (NCR)</td>
-<td>2853.50</td>
-<td>2980.67</td>
-<td>26813.66</td>
-<td>269.45</td>
-<td>2303.66</td>
-<td>10100.35</td>
-<td>3215.96</td>
-<td>1174.66</td>
-<td>...</td>
-<td>8689.21</td>
-<td>3562.05</td>
-<td>20885.76</td>
-<td>34328.31</td>
-<td>5248.50</td>
-<td>6024.01</td>
-<td>7083.11</td>
-<td>30346.15</td>
-<td>8567.34</td>
-<td>4001.35</td>
+<th>0</th>
+<td>All Species</td>
+<td>National Capital Region (NCR)</td>
+<td>2020 Quarter 1</td>
+<td>10190.23</td>
 </tr>
 <tr>
-<th>18</th>
-<td>Milkfish</td>
-<td>..Cordillera Administrative Region (CAR)</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>...</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
-<td>..</td>
+<th>1</th>
+<td>All Species</td>
+<td>Cordillera Administrative Region (CAR)</td>
+<td>2020 Quarter 1</td>
+<td>72535.13</td>
 </tr>
 <tr>
-<th>19</th>
-<td>Milkfish</td>
-<td>..Region I (Ilocos Region)</td>
-<td>2721045.87</td>
-<td>1772567.51</td>
-<td>2058099.74</td>
-<td>7633914.73</td>
-<td>2999911.67</td>
-<td>2716007.93</td>
-<td>2828743.17</td>
-<td>9076969.67</td>
-<td>...</td>
-<td>3792090.20</td>
-<td>8076617.42</td>
-<td>3523480.49</td>
-<td>3103180.63</td>
-<td>4193562.16</td>
-<td>8781399.31</td>
-<td>3245786.40</td>
-<td>2742036.67</td>
-<td>3623346.05</td>
-<td>9455618.22</td>
+<th>2</th>
+<td>All Species</td>
+<td>Region I (Ilocos Region)</td>
+<td>2020 Quarter 1</td>
+<td>3062615.94</td>
 </tr>
 <tr>
-<th>20</th>
-<td>Milkfish</td>
-<td>..Region II (Cagayan Valley)</td>
-<td>1623.57</td>
-<td>64234.71</td>
-<td>2309.58</td>
-<td>722.79</td>
-<td>1668.03</td>
-<td>77353.68</td>
-<td>2365.24</td>
-<td>732.92</td>
-<td>...</td>
-<td>13812.32</td>
-<td>627.30</td>
-<td>3804.14</td>
-<td>85552.60</td>
-<td>18665.99</td>
-<td>781.98</td>
-<td>6060.67</td>
-<td>50672.09</td>
-<td>22620.79</td>
-<td>727.37</td>
+<th>3</th>
+<td>All Species</td>
+<td>Region II (Cagayan Valley)</td>
+<td>2020 Quarter 1</td>
+<td>213501.70</td>
 </tr>
 <tr>
-<th>21</th>
-<td>Milkfish</td>
-<td>..Region III (Central Luzon)</td>
-<td>1159738.77</td>
-<td>4338613.29</td>
-<td>965799.21</td>
-<td>2090098.03</td>
-<td>1373695.56</td>
-<td>4847022.38</td>
-<td>1066352.36</td>
-<td>2652448.07</td>
-<td>...</td>
-<td>1512014.56</td>
-<td>2391593.08</td>
-<td>1903219.57</td>
-<td>1785182.98</td>
-<td>1559673.60</td>
-<td>2626684.66</td>
-<td>1426591.07</td>
-<td>1428380.65</td>
-<td>1123880.83</td>
-<td>2453522.17</td>
+<th>4</th>
+<td>All Species</td>
+<td>Region III (Central Luzon)</td>
+<td>2020 Quarter 1</td>
+<td>9137119.99</td>
 </tr>
 </tbody>
 </table>
-<p>5 rows × 22 columns</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can also split the <code>Year-Quarter</code> column into two: <code>Year</code> and <code>Quarter</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Year'</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="s1">'Year-Quarter'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">value_df</span><span class="p">[</span><span class="s1">'Quarter'</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="s1">'Year-Quarter'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="n">value_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">'Year-Quarter'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -8252,10 +8766,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8266,49 +8780,89 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array(['..National Capital Region (NCR)',
-       '..Cordillera Administrative Region (CAR)',
-       '..Region I (Ilocos Region)', '..Region II (Cagayan Valley)',
-       '..Region III (Central Luzon)', '..Region IV-A (CALABARZON)',
-       '..MIMAROPA Region', '..Region V (Bicol Region)',
-       '..Region VI (Western Visayas)', '..Region VII (Central Visayas)',
-       '..Region VIII (Eastern Visayas)',
-       '..Region IX (Zamboanga Peninsula)',
-       '..Region X (Nothern Mindanao)', '..Region XI (Davao Region)',
-       '..Region XII (SOCCSKSARGEN)', '..Region XIII (Caraga)',
-       '..Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)'],
-      dtype=object)</pre>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Species</th>
+<th>Geolocation</th>
+<th>Value</th>
+<th>Year</th>
+<th>Quarter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>All Species</td>
+<td>National Capital Region (NCR)</td>
+<td>10190.23</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>All Species</td>
+<td>Cordillera Administrative Region (CAR)</td>
+<td>72535.13</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>2</th>
+<td>All Species</td>
+<td>Region I (Ilocos Region)</td>
+<td>3062615.94</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>3</th>
+<td>All Species</td>
+<td>Region II (Cagayan Valley)</td>
+<td>213501.70</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>4</th>
+<td>All Species</td>
+<td>Region III (Central Luzon)</td>
+<td>9137119.99</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">value_df</span> <span class="o">=</span> <span class="n">value_df</span><span class="o">.</span><span class="n">melt</span><span class="p">([</span><span class="s1">'Species'</span><span class="p">,</span> <span class="s1">'Geolocation'</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">"Year-Quarter"</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">"Value"</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>And with this, we're done preprocessing the <code>Value</code> dataset. We now proceed and do the same for the <code>Volume</code> dataset.</p>
 </div>
 </div>
 </div>
@@ -8323,12 +8877,28 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Just like the <code>Value</code> dataset, we perform the same set of steps for the <code>Volume</code> dataset.</p>
+<ol>
+<li>Check a quick summary.</li>
+<li>Clean the data through imputation and data type fixing.</li>
+<li>Transform each column and dataset format.</li>
+</ol>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8342,7 +8912,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8519,7 +9089,88 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(340, 22)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 340 entries, 0 to 339
+Data columns (total 22 columns):
+ #   Column          Non-Null Count  Dtype 
+---  ------          --------------  ----- 
+ 0   Species         340 non-null    object
+ 1   Geolocation     340 non-null    object
+ 2   2020 Quarter 1  340 non-null    object
+ 3   2020 Quarter 2  340 non-null    object
+ 4   2020 Quarter 3  340 non-null    object
+ 5   2020 Quarter 4  340 non-null    object
+ 6   2021 Quarter 1  340 non-null    object
+ 7   2021 Quarter 2  340 non-null    object
+ 8   2021 Quarter 3  340 non-null    object
+ 9   2021 Quarter 4  340 non-null    object
+ 10  2022 Quarter 1  340 non-null    object
+ 11  2022 Quarter 2  340 non-null    object
+ 12  2022 Quarter 3  340 non-null    object
+ 13  2022 Quarter 4  340 non-null    object
+ 14  2023 Quarter 1  340 non-null    object
+ 15  2023 Quarter 2  340 non-null    object
+ 16  2023 Quarter 3  340 non-null    object
+ 17  2023 Quarter 4  340 non-null    object
+ 18  2024 Quarter 1  340 non-null    object
+ 19  2024 Quarter 2  340 non-null    object
+ 20  2024 Quarter 3  340 non-null    object
+ 21  2024 Quarter 4  340 non-null    object
+dtypes: object(22)
+memory usage: 58.6+ KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -8533,7 +9184,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8681,12 +9332,174 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Similar to the <code>Value</code> dataset, we can state that the <code>Volume</code> dataset also has the same set of problems.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>['All Species' '..Milkfish' '..Tilapia' '..Tiger Prawn' '..Mudcrab'
+ '..Endeavor Prawn' '..White Shrimp' '..Grouper' '..Siganid'
+ '..P. Vannamei' '..Spiny Lobster' '..Carp' '..Catfish' '..Gourami'
+ '..Mudfish' '..Freshwater Prawn' '..Others' '..Oyster' '..Mussel'
+ '..Seaweed']
+['..National Capital Region (NCR)'
+ '..Cordillera Administrative Region (CAR)' '..Region I (Ilocos Region)'
+ '..Region II (Cagayan Valley)' '..Region III (Central Luzon)'
+ '..Region IV-A (CALABARZON)' '..MIMAROPA Region'
+ '..Region V (Bicol Region)' '..Region VI (Western Visayas)'
+ '..Region VII (Central Visayas)' '..Region VIII (Eastern Visayas)'
+ '..Region IX (Zamboanga Peninsula)' '..Region X (Nothern Mindanao)'
+ '..Region XI (Davao Region)' '..Region XII (SOCCSKSARGEN)'
+ '..Region XIII (Caraga)'
+ '..Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)']
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">year_quarter_cols</span> <span class="o">=</span> <span class="n">volume_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">year_quarter_cols</span><span class="p">:</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="n">volume_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'..'</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">filtered_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> / </span><span class="si">{</span><span class="n">volume_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="p">(</span><span class="n">filtered_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">volume_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2020 Quarter 1: 99 / 340 = 29.117647058823533%
+2020 Quarter 2: 96 / 340 = 28.235294117647058%
+2020 Quarter 3: 97 / 340 = 28.52941176470588%
+2020 Quarter 4: 94 / 340 = 27.647058823529413%
+2021 Quarter 1: 100 / 340 = 29.411764705882355%
+2021 Quarter 2: 98 / 340 = 28.823529411764703%
+2021 Quarter 3: 102 / 340 = 30.0%
+2021 Quarter 4: 91 / 340 = 26.764705882352942%
+2022 Quarter 1: 90 / 340 = 26.47058823529412%
+2022 Quarter 2: 98 / 340 = 28.823529411764703%
+2022 Quarter 3: 92 / 340 = 27.058823529411764%
+2022 Quarter 4: 93 / 340 = 27.35294117647059%
+2023 Quarter 1: 86 / 340 = 25.294117647058822%
+2023 Quarter 2: 89 / 340 = 26.176470588235297%
+2023 Quarter 3: 101 / 340 = 29.705882352941178%
+2023 Quarter 4: 101 / 340 = 29.705882352941178%
+2024 Quarter 1: 102 / 340 = 30.0%
+2024 Quarter 2: 89 / 340 = 26.176470588235297%
+2024 Quarter 3: 100 / 340 = 29.411764705882355%
+2024 Quarter 4: 91 / 340 = 26.764705882352942%
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Since there are no columns that has 50% or more <code>NULL</code> values, we proceed with KNN imputation.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span> <span class="o">=</span> <span class="n">volume_df</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">'..'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">impute_df</span> <span class="o">=</span> <span class="n">volume_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">labeled_species</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">labeled_geo</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+
+<span class="n">impute_df</span><span class="p">[</span><span class="s1">'Species_encoded'</span><span class="p">]</span> <span class="o">=</span> <span class="n">labeled_species</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">impute_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">])</span>
+<span class="n">impute_df</span><span class="p">[</span><span class="s1">'Geolocation_encoded'</span><span class="p">]</span> <span class="o">=</span> <span class="n">labeled_geo</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">impute_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">])</span>
+
+<span class="n">knn_features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
+    <span class="n">impute_df</span><span class="p">[[</span><span class="s1">'Species_encoded'</span><span class="p">,</span> <span class="s1">'Geolocation_encoded'</span><span class="p">]]</span>
+<span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">year_quarter_cols</span><span class="p">:</span>
+    <span class="n">knn_imputer</span> <span class="o">=</span> <span class="n">KNNImputer</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">imputed_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+        <span class="n">knn_imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">knn_features</span><span class="p">,</span> <span class="n">impute_df</span><span class="p">[[</span><span class="n">col</span><span class="p">]]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)),</span>
+        <span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">knn_features</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="n">col</span><span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="n">volume_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputed_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8700,7 +9513,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['All Species', '..Milkfish', '..Tilapia', '..Tiger Prawn',
        '..Mudcrab', '..Endeavor Prawn', '..White Shrimp', '..Grouper',
@@ -8716,11 +9529,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'All Species'</span><span class="p">]</span>
-<span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
 </pre></div>
 </div>
 </div>
@@ -8731,7 +9543,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8745,7 +9557,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['..National Capital Region (NCR)',
        '..Cordillera Administrative Region (CAR)',
@@ -8768,10 +9580,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="s1">'Geolocation'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
 </pre></div>
 </div>
 </div>
@@ -8782,35 +9594,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span> <span class="o">=</span> <span class="n">volume_df</span><span class="o">.</span><span class="n">melt</span><span class="p">([</span><span class="s1">'Species'</span><span class="p">,</span> <span class="s1">'Geolocation'</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">"Year-Quarter"</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">"Value"</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Combine-both-dataset">Combine both dataset<a class="anchor-link" href="#Combine-both-dataset">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">value_df</span><span class="p">,</span> <span class="n">volume_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">,</span> <span class="s1">'Geolocation'</span><span class="p">,</span> <span class="s1">'Year-Quarter'</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -8821,10 +9608,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8835,7 +9622,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8858,7 +9645,231 @@ a.anchor-link {
 <th>Species</th>
 <th>Geolocation</th>
 <th>Year-Quarter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>l Species</td>
+<td>National Capital Region (NCR)</td>
+<td>2020 Quarter 1</td>
+<td>250.84</td>
+</tr>
+<tr>
+<th>1</th>
+<td>l Species</td>
+<td>Cordillera Administrative Region (CAR)</td>
+<td>2020 Quarter 1</td>
+<td>703.32</td>
+</tr>
+<tr>
+<th>2</th>
+<td>l Species</td>
+<td>Region I (Ilocos Region)</td>
+<td>2020 Quarter 1</td>
+<td>27212.01</td>
+</tr>
+<tr>
+<th>3</th>
+<td>l Species</td>
+<td>Region II (Cagayan Valley)</td>
+<td>2020 Quarter 1</td>
+<td>2073.65</td>
+</tr>
+<tr>
+<th>4</th>
+<td>l Species</td>
+<td>Region III (Central Luzon)</td>
+<td>2020 Quarter 1</td>
+<td>74439.96</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="p">[</span><span class="s1">'Year'</span><span class="p">]</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="s1">'Year-Quarter'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">volume_df</span><span class="p">[</span><span class="s1">'Quarter'</span><span class="p">]</span> <span class="o">=</span> <span class="n">volume_df</span><span class="p">[</span><span class="s1">'Year-Quarter'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="n">volume_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">'Year-Quarter'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">volume_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Species</th>
+<th>Geolocation</th>
+<th>Value</th>
+<th>Year</th>
+<th>Quarter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>l Species</td>
+<td>National Capital Region (NCR)</td>
+<td>250.84</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>l Species</td>
+<td>Cordillera Administrative Region (CAR)</td>
+<td>703.32</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>2</th>
+<td>l Species</td>
+<td>Region I (Ilocos Region)</td>
+<td>27212.01</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>3</th>
+<td>l Species</td>
+<td>Region II (Cagayan Valley)</td>
+<td>2073.65</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+<tr>
+<th>4</th>
+<td>l Species</td>
+<td>Region III (Central Luzon)</td>
+<td>74439.96</td>
+<td>2020</td>
+<td>Quarter 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Combine-both-dataset">Combine both dataset<a class="anchor-link" href="#Combine-both-dataset">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">value_df</span><span class="p">,</span> <span class="n">volume_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">'Species'</span><span class="p">,</span> <span class="s1">'Geolocation'</span><span class="p">,</span> <span class="s1">'Year'</span><span class="p">,</span> <span class="s1">'Quarter'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Species</th>
+<th>Geolocation</th>
 <th>Value_x</th>
+<th>Year</th>
+<th>Quarter</th>
 <th>Value_y</th>
 </tr>
 </thead>
@@ -8867,41 +9878,46 @@ a.anchor-link {
 <th>0</th>
 <td>Milkfish</td>
 <td>National Capital Region (NCR)</td>
-<td>2020 Quarter 1</td>
-<td>2853.50</td>
-<td>36.37</td>
+<td>2.853500e+03</td>
+<td>2020</td>
+<td>Quarter 1</td>
+<td>36.370000</td>
 </tr>
 <tr>
 <th>1</th>
 <td>Milkfish</td>
 <td>Cordillera Administrative Region (CAR)</td>
-<td>2020 Quarter 1</td>
-<td>..</td>
-<td>..</td>
+<td>3.503092e+04</td>
+<td>2020</td>
+<td>Quarter 1</td>
+<td>351.713333</td>
 </tr>
 <tr>
 <th>2</th>
 <td>Milkfish</td>
 <td>Region I (Ilocos Region)</td>
-<td>2020 Quarter 1</td>
-<td>2721045.87</td>
-<td>24495.36</td>
+<td>2.721046e+06</td>
+<td>2020</td>
+<td>Quarter 1</td>
+<td>24495.360000</td>
 </tr>
 <tr>
 <th>3</th>
 <td>Milkfish</td>
 <td>Region II (Cagayan Valley)</td>
-<td>2020 Quarter 1</td>
-<td>1623.57</td>
-<td>12.95</td>
+<td>1.623570e+03</td>
+<td>2020</td>
+<td>Quarter 1</td>
+<td>12.950000</td>
 </tr>
 <tr>
 <th>4</th>
 <td>Milkfish</td>
 <td>Region III (Central Luzon)</td>
-<td>2020 Quarter 1</td>
-<td>1159738.77</td>
-<td>10972.48</td>
+<td>1.159739e+06</td>
+<td>2020</td>
+<td>Quarter 1</td>
+<td>10972.480000</td>
 </tr>
 </tbody>
 </table>
@@ -8915,7 +9931,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span><span class="o">.</span><span class="n">columns</span>
@@ -8929,9 +9945,9 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>Index(['Species', 'Geolocation', 'Year-Quarter', 'Value_x', 'Value_y'], dtype='object')</pre>
+<pre>Index(['Species', 'Geolocation', 'Value_x', 'Year', 'Quarter', 'Value_y'], dtype='object')</pre>
 </div>
 </div>
 </div>
@@ -8941,25 +9957,12 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">'Value_x'</span><span class="p">:</span> <span class="s1">'Value'</span><span class="p">,</span> <span class="s1">'Value_y'</span><span class="p">:</span> <span class="s1">'Volume'</span><span class="p">},</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>There are missing steps that were not included. Imputation since there's no missing values.</p>
-</blockquote>
 </div>
 </div>
 </div>
@@ -8979,7 +9982,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">combined_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'./Dataset/combined_value_and_volume.csv'</span><span class="p">)</span>

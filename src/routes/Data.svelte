@@ -2,6 +2,8 @@
     let dataset_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/?tablelist=true&rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
     let aquaculture_value_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0082E4GCAP0.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
     let aquaculture_volume_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0072E4GVAP0.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
+
+    import { base } from '$app/paths';
 </script>
 
 <div class="max-w-5xl mx-auto">
@@ -32,5 +34,5 @@
             We then combine the two datasets to prepare the final dataset that will be analyzed. The finalized dataset can be found <a target="_blank" rel="noreferrer" class="font-medium text-blue-600 hover:underline" href="https://docs.google.com/spreadsheets/d/1Clv7PSyVfpd0Z6B8E9nZ_KqdCiAqs-3NHwGAkvegNkY/edit?usp=sharing">here</a>.
         </li>
     </ul>
-    <iframe title="Data Processing" src="data-preprocessing-proper.html" width="100%" height="600px"></iframe>
+    <iframe title="Data Processing" src="/data-preprocessing-proper.html" width="100%" height="600px"></iframe>
 </div>

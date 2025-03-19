@@ -37,7 +37,7 @@
     <p class="mb-4">
         <em>References:</em>
         {#each references as item}
-            <a href="{item}">[{increment()}]</a>
+            <a target="_blank" rel="noreferrer" class="font-medium text-blue-600 hover:underline" href="{item}">[{increment()}]</a>
         {/each}
     </p>
 

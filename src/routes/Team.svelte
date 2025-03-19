@@ -21,7 +21,7 @@
 
 <div class="max-w-5xl mx-auto">
     <h1 class="mb-4">Team</h1>
-    <div class="grid grid-cols-3 gap-4 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto">
         {#each content as details}
         <div>
             {#await import(`$lib/images/${details.profile_picture}.png`) then { default: src }}

@@ -8,6 +8,9 @@ const config = {
 	  assets: 'build',
 	  fallback: '404.html'
 	}) },
+	// paths: {
+	// 	base: process.argv.includes('dev') ? '/cs132-final-project' : process.env.BASE_PATH
+	// },
 	preprocess: [vitePreprocess()],
   };
 

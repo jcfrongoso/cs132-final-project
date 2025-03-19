@@ -34,5 +34,5 @@
             We then combine the two datasets to prepare the final dataset that will be analyzed. The finalized dataset can be found <a target="_blank" rel="noreferrer" class="font-medium text-blue-600 hover:underline" href="https://docs.google.com/spreadsheets/d/1Clv7PSyVfpd0Z6B8E9nZ_KqdCiAqs-3NHwGAkvegNkY/edit?usp=sharing">here</a>.
         </li>
     </ul>
-    <iframe title="Data Processing" src="{base}/data-preprocessing-proper.html" width="100%" height="600px"></iframe>
+    <iframe title="Data Processing" src={`${base}/data-preprocessing-proper.html`} width="100%" height="600px"></iframe>
 </div>

@@ -14,8 +14,8 @@ const config = {
 		// paths: {
 		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		// }
-		preprocess: [vitePreprocess()],
-	}
+	},
+	preprocess: [vitePreprocess()],
 };
 
 export default config;

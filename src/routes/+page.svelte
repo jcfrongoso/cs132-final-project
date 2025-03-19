@@ -11,38 +11,38 @@
 </script>
 
 <!-- Introduction to the entire thing -->
-<section class="my-8" id="Hero">
+<section class="my-8 mx-8 sm:mx-auto" id="Hero">
     <Hero />
 </section>
 
 <!-- Overview -->
-<section class="my-8" id="Overview">
+<section class="my-8 mx-8 sm:mx-auto" id="Overview">
     <Overview />
 </section>
 
 <!-- Problem, Solution, Objectives & Hypothesis -->
-<section class="my-8" id="Problem">
+<section class="my-8 mx-8 sm:mx-auto" id="Problem">
     <Problem />
 </section>
 
 <!-- Data History and Collection -->
-<section class="my-8" id="Data">
+<section class="my-8 mx-8 sm:mx-auto" id="Data">
     <Data />
 </section>
 
 {#if render_results}
 <!-- Data Preprocessing -->
-<section class="my-8">
+<section class="my-8 mx-8 sm:mx-auto">
     <Preprocessing />
 </section>
 
 <!-- Results -->
-<section class="my-8">
+<section class="my-8 mx-8 sm:mx-auto">
     <Results />
 </section>    
 {/if}
 
 <!-- Team -->
-<section class="my-8" id="Team">
+<section class="my-8 mx-8 sm:mx-auto" id="Team">
     <Team />
 </section>

@@ -43,12 +43,24 @@
 </script>
 
 <div class="max-w-5xl mx-auto">
-    <h1 class="mb-4">Problem</h1>
-    <p class="mb-4">
-        Philippines already has an domineering aquaculture production, but recent statistical data shows a decrease in production a year prior.
-    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+            <h1 class="mb-4">Problem</h1>
+            <p class="mb-4">
+                Philippines already has an domineering aquaculture production, but recent statistical data shows a decrease in production a year prior.
+            </p>
+        </div>
+        <div>
+            <h1 class="mb-4">Solution</h1>
+            <p class="mb-4">
+                Philippines already has an domineering aquaculture production, but recent statistical data shows a decrease in production a year prior.
+            </p>
+        </div>
+    </div>
+    
+    
     <h2 class="mb-2">Research Questions</h2>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {#each content as details}
         <div>
             <h3>

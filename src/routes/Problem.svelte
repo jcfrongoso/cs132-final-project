@@ -53,7 +53,7 @@
         <div>
             <h1 class="mb-4">Solution</h1>
             <p class="mb-4">
-                Philippines already has an domineering aquaculture production, but recent statistical data shows a decrease in production a year prior.
+                By analyzing previous quarterly data about aquaculture, the group aims to find specific parameters and analyze trends that could have affected the value and volume of production. This also includes recent events or policies that directly or indirectly affect the sector.
             </p>
         </div>
     </div>

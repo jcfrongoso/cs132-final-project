@@ -2,6 +2,8 @@
     let dataset_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/?tablelist=true&rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
     let aquaculture_value_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0082E4GCAP0.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
     let aquaculture_volume_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0072E4GVAP0.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
+    let finalized_dataset = "https://docs.google.com/spreadsheets/d/1GGl72rv4w5Nj0xWuO4UrPLCey6OTtPAnVTV8sImYsqU/edit?usp=sharing";
+    let colab_link = "https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl?usp=sharing";
 
     import { base } from '$app/paths';
 </script>
@@ -34,10 +36,10 @@
             Since we've skipped the outlier part, our group proceeded to reformat the columns and the dataset itself. Based on the values of the `Species` column, we can remove leading periods. The same goes to the `Geolocation` column. After reformatting the `Species` and `Geolocation` columns, we transform the wide formatted dataset into long formatting using `melt()` in order to properly structure the datasets into time-series format.
         </li>
         <li>
-            After applying all these steps on both datasets, our group finally combined them to prepare the final dataset that will be analyzed. The finalized dataset can be found <a target="_blank" rel="noreferrer" class="font-medium text-blue-600 hover:underline" href="https://docs.google.com/spreadsheets/d/1GGl72rv4w5Nj0xWuO4UrPLCey6OTtPAnVTV8sImYsqU/edit?usp=sharing">here</a>.
+            After applying all these steps on both datasets, our group finally combined them to prepare the final dataset that will be analyzed. The finalized dataset can be found <a target="_blank" rel="noreferrer" class="font-medium text-blue-600 hover:underline" href="{finalized_dataset}">here</a>.
         </li>
     </ul>
-    <a href="https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl?usp=sharing" target="_blank">
+    <a href="{colab_link}" target="_blank">
         <button style="margin-top: 10px; padding: 10px 15px; background-color: #4285F4; color: white; border: none; border-radius: 5px; cursor: pointer;">
             Open in Google Colab
         </button>

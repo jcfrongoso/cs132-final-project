@@ -27,7 +27,8 @@ jobs:
         run: npm install
 
       - name: build
-        env: '/${{ github.event.cs132-final-project}}'
+        env: 
+        BASE_PATH: '/${{ github.event.cs132-final-project}}'
         run: npm run build
 
       - name: Upload Artifacts

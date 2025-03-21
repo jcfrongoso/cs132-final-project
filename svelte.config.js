@@ -11,9 +11,9 @@ const config = {
 			strict: true,
 			fallback: '404.html'
 		}),
-		paths: {
-			base: process.argv.includes('dev') ? '' : "/cs132-final-project"
-		}
+		// paths: {
+		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		// }
 	},
 	preprocess: [vitePreprocess()],
 };

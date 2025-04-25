@@ -15,14 +15,14 @@
         //     alternate:  "There is a significant trend (increase or decrease) in aquaculture production in the Philippines over time.",
         // },
         {
-            question:   "Is there a significant relationship between the value and volume aquaculture systems here in the Philippines?",
-            null:       "There is no significant correlation between the value and volume of aquaculture production in the Philippines.",
-            alternate:  "There is a significant correlation between the value and volume of aquaculture production in the Philippines.",
+            question:   "Does an increase in aquaculture production volume lead to a corresponding increase in its economic value?",
+            null:       "There is no significant correlation between aquaculture volume and value.",
+            alternate:  "There is a significant correlation between aquaculture volume and value.",
         },
         {
-            question:   "What factors could cause significant changes in trend variations for the aquaculture system in the Philippines?",
-            null:       "Selected factors (e.g., climate conditions, government policies, technology adoption) do not significantly affect trend variations in Philippine aquaculture systems.",
-            alternate:  "Selected factors (e.g., climate conditions, government policies, technology adoption) significantly affect trend variations in Philippine aquaculture systems.",
+            question:   "Is there a significant difference in aquaculture volume across different regions in the Ph?",
+            null:       "There is no significant difference in aquaculture volume across different regions in the Philippines.",
+            alternate:  "There is a significant difference in aquaculture volume across different regions in the Philippines.",
         },
         // {
         //     question:   "How does geolocation correlate to value and volume for each region?",
@@ -35,9 +35,9 @@
         //     alternate:  "There are significant differences in growth rates among different aquaculture species in the Philippines.",
         // },
         {
-            question:   "Should we invest more in the growth of aquaculture here in the Philippines?",
-            null:       "Increased investment in aquaculture in the Philippines does not lead to significant improvements in production.",
-            alternate:  "Increased investment in aquaculture in the Philippines leads to significant improvements in production.",
+            question:   "Is there a significant trend in the volume of aquaculture production in the Philippines over the years?",
+            null:       "There is no significant trend in the volume of aquaculture in the Philippines over the years.",
+            alternate:  "There is a significant trend in the volume of aquaculture in the Philippines over the years.",
         },
     ];
 </script>

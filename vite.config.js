@@ -4,5 +4,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit(), tailwindcss()],
-	base: '/cs132-final-project/',
+	base: 'https://jcfrongoso.github.io/cs132-final-project/',
 });

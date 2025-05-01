@@ -2,9 +2,7 @@
     <h1>Results</h1>
     <div>
         <h2>Exploratory Data Analysis</h2>
-        
     </div>
-
     <div>
         <h2>Hypothesis Testing</h2>
         <div>

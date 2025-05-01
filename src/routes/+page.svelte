@@ -1,5 +1,5 @@
 <script>
-    let render_results = false;
+    let render_results = true;
 
     import Hero from './Hero.svelte';
     import Overview from './Overview.svelte';

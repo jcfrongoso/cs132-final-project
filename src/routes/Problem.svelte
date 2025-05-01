@@ -57,8 +57,6 @@
             </p>
         </div>
     </div>
-    
-    
     <h2 class="mb-2">Research Questions</h2>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
         {#each content as details}

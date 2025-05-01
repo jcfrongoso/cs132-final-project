@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     const nav_items = [
         "Overview",
         "Problem",
@@ -12,7 +13,7 @@
         <ul class="flex justify-center">
             {#each nav_items as item}
             <li>
-                <a class="block p-4 transition-colors font-medium" href="#{item}">{item}</a>
+                <a class="block p-4 transition-colors font-medium" href="{base}/#{item}">{item}</a>
             </li>
             {/each}
         </ul>

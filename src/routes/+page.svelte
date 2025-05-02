@@ -11,28 +11,28 @@
 </script>
 
 <!-- Introduction to the entire thing -->
-<section class="my-8 mx-8 sm:mx-auto" id="Hero">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Hero">
     <Hero />
 </section>
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 
 <!-- Overview -->
-<section class="my-8 mx-8 sm:mx-auto" id="Overview">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Overview">
     <Overview />
 </section>
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 
 <!-- Problem, Solution, Objectives & Hypothesis -->
-<section class="my-8 mx-8 sm:mx-auto" id="Problem">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Problem">
     <Problem />
 </section>
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 
 <!-- Data History and Collection -->
-<section class="my-8 mx-8 sm:mx-auto" id="Data">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Data">
     <Data />
 </section>
 
@@ -40,14 +40,14 @@
 
 {#if render_results}
 <!-- Data Preprocessing -->
-<section class="my-8 mx-8 sm:mx-auto">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Preprocessing">
     <Preprocessing />
 </section>
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 
 <!-- Results -->
-<section class="my-8 mx-8 sm:mx-auto">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Results">
     <Results />
 </section>
 
@@ -55,6 +55,6 @@
 {/if}
 
 <!-- Team -->
-<section class="my-8 mx-8 sm:mx-auto" id="Team">
+<section class="my-8 pt-20 mx-8 sm:mx-auto" id="Team">
     <Team />
 </section>

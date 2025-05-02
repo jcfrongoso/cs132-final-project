@@ -4,6 +4,8 @@
         "Overview",
         "Problem",
         "Data",
+        "Preprocessing",
+        "Results",
         "Team",
     ]
 </script>

@@ -5,6 +5,10 @@
     import rq1_1 from '$lib/images/plots/4-1 Relationship between Production Volume and Economic Value.png'
     import rq1_2 from '$lib/images/plots/4-1 KMeans Clustering.png'
     import rq1_3 from '$lib/images/plots/4-1 Kmeans with regression lines.png'
+    import rq2_1 from '$lib/images/plots/4-2 Production Volume by Region.png'
+    import rq2_2 from '$lib/images/plots/4-2 Production Volume Distribution by Region.png'
+    import rq3_1 from '$lib/images/plots/4-3 Production Volume Over The Years.png'
+    import rq3_2 from '$lib/images/plots/4-2 Production Volume by Region.png'
     import nutshell_plot from '$lib/images/plots/5 Nutshell Plot.png' ;
 </script>
 
@@ -40,10 +44,14 @@
         <h3  class="mb-2">
             Ha: There is a significant difference in aquaculture volume across different regions in the Philippines.
         </h3>
-        <p  class="mb-2">Now that we've identified that there is indeed a correlation between the two, we can further dive deeper by identifying if there's a significant difference in volume across different regions in the Philippines. Why does this matter? Well, we are an archipelago and it tells a lot about the composition of our geography. With around 7000 islands in the country, there is in no doubt that aquaculture is a thing on our regions. But does that mean that regions that are near coastal or have bodies of water inside them get to utilize them properly, thus a substantial volume? This is what this question asks. We want to know the efficiency if there's a discrepancy between regions.</p>
-        <p  class="mb-2">Note that our independent variable here is the geolocation/regions in the Philippines and our dependent variable is aquaculture volume. Given this, we proceed to utilize Kruskal Wallis to test our hypothesis.</p>
-        <p  class="mb-2">insert table here</p>
-        <p  class="mb-2">Given the H value of 378 which is very large and a p value of $1.41\times 10^{-70}$, we reject the null hypothesis. Thus, there is a significant difference in aquaculture volume across different regions in the Philippines.</p>
+        <p  class="mb-2">For this research question, we are dealing with a categorical variable as a predictor and a quantitative outcome variable so based on our research, we will be using Kruskal Wallis test for hypothesis testing.</p>
+        <p  class="mb-2">After using the Scipy method `f_oneway`, we get that an F value of 45 and a p value of $3.25\times 10^{-135}$ which are relatively small so we reject the null hypothesis. Given this, we can say that **there is a significant difference in aquaculture volume across different regions in the Philippines**.</p>
+        <h3>IMPLICATIONS</h3>
+        <p  class="mb-2">This tells us that every region has their own contribution and no conclusion can be said that could summarize the volume of aquaculture each region provides. This discrepancy allows us to identify weak points which we could prepare for or plan about. There might be some lack of support or some corruptive acts that could lead to such discrepancy. This can be further shown by the boxplots below, excluding outliers for each region. BARMM is quite an interesting case having a healthy production volume. If we geographically locate BARMM, it is located in the south-western part of the Philippines and is comprised of several islands and a mainland Mindanao area. Given its geographical location, we can already infer as to why BARMM produces such high highs in terms of volume.</p>
+        <img alt="Placeholder" class="w-xl" src={rq2_1} />
+        <p  class="mb-2">If we think about it, several other regions especially in the Visayas are surrounded by large bodies of water but if we take a closer look, Western Visayas have greater proportions compared to Central and Eastern Visayas. Why could this be? ...</p>
+        <p class="mb-2">Aside from the regions that are surrounded by bodies of water, there is also another interesting instance where Central Luzon, which is known for its vast lands for farming and agricultural products, is the second in terms of production volume. The same question arises: why?</p>
+        <p class="mb-2"></p>
     </div>
     <div>
         <h2  class="mb-2">Research Question 3: Is there a significant trend in the volume of aquaculture production in the Philippines over the years?</h2>
@@ -53,8 +61,15 @@
         <h3  class="mb-2">
             Ha: There is a significant trend in the volume of aquaculture in the Philippines over the years.
         </h3>
-        <p  class="mb-2">Given the H value of 37.7 which is quite large and a p value of $1.31\times 10^{-7}$, we also reject the null hypothesis. Thus, there is a significant difference in aquaculture volume over the years.</p>
-        WHAAT
+        <p  class="mb-2">Similar to the previous research question, we are dealing with a quantitative predictor and a quantitative outcome variable. This time, instead of using linear regression, we apply Mann-Kendall Trend Test to test monotonic trends.</p>
+        <p>Given that `trend` is `no trend`, this means that there's no significant trend, thus we fail to reject `Ho`. This tells us about the uncertainty of the possible volume of aquaculture that we'll have for the following years. This uncertainty can cause several implications such as:
+- Difficulty in long-term planning for supply chain management, including storage, distribution, and market pricing.
+- Challenges in policy-making for the aquaculture sector, as the absence of a clear trend makes it harder to design effective interventions or subsidies.
+- Risk for investors and stakeholders in the aquaculture industry who rely on production forecasts for business decisions.
+- Potential instability in food security, especially if future volumes fluctuate unexpectedly, affecting local consumption and export goals.</p>
+        <p>This can be further illustrated by the time series graph below which shows that there is indeed no apparent trend for the past five years.</p>
+        <img alt="Placeholder" class="w-xl" src={rq3_1} />
+        <img alt="Placeholder" class="w-xl" src={rq3_2} />
     </div>
     
     <h3 class="mb-2">What's our take?</h3>

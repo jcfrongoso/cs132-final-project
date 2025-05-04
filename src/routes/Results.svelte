@@ -2,11 +2,11 @@
     import { base } from '$app/paths';
 
     // Place images here
-    import rq1_1 from `${base}/images/plots/4-1 Relationship between Production Volume and Economic Value.png`;
-    import rq1_2 from `${base}/images/plots/4-1 KMeans Clustering.png';
-    import rq1_3 from `${base}/images/plots/4-1 Kmeans with regression lines.png';
-    import rq2_1 from `${base}/images/plots/4-2 Production Volume by Region.png';
-    import rq2_2 from `${base}/images/plots/4-2 Production Volume Distribution by Region.png';
+    import rq1_1 from '$lib/images/plots/4-1 Relationship between Production Volume and Economic Value.png';
+    import rq1_2 from '$lib/images/plots/4-1 KMeans Clustering.png';
+    import rq1_3 from '$lib/images/plots/4-1 Kmeans with regression lines.png';
+    import rq2_1 from '$lib/images/plots/4-2 Production Volume by Region.png';
+    import rq2_2 from '$lib/images/plots/4-2 Production Volume Distribution by Region.png';
     import rq3_1 from '$lib/images/plots/4-3 Production Volume Over The Years.png';
     import rq3_2 from '$lib/images/plots/4-3 Production Volume Over the Years by Region.png';
     import nutshell_plot from '$lib/images/plots/5 Nutshell plot.png';

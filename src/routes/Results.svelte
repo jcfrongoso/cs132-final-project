@@ -9,7 +9,7 @@
     import rq2_2 from '$lib/images/plots/4-2 Production Volume Distribution by Region.png'
     import rq3_1 from '$lib/images/plots/4-3 Production Volume Over The Years.png'
     import rq3_2 from '$lib/images/plots/4-2 Production Volume by Region.png'
-    import nutshell_plot from '$lib/images/plots/5 Nutshell Plot.png' ;
+    import nutshell_plot from '$lib/images/plots/5 Nutshell plot.png' ;
 </script>
 
 <div class="max-w-5xl mx-auto">

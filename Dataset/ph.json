@@ -1,0 +1,461 @@
+[
+  {
+    "place_id": 238526707,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3561455,
+    "lat": "13.0764489",
+    "lon": "123.5162595",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.532968728266953,
+    "addresstype": "region",
+    "name": "Region V (Bicol Region)",
+    "display_name": "Bicol Region, Philippines",
+    "address": {
+      "region": "Bicol Region",
+      "ISO3166-2-lvl3": "PH-05",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "11.5153837",
+      "14.6359471",
+      "122.2838905",
+      "124.5629816"
+    ]
+  },
+  {
+    "place_id": 240009561,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3821409,
+    "lat": "5.1462530",
+    "lon": "120.2269972",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.516903198479502,
+    "addresstype": "region",
+    "name": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+    "display_name": "Bangsamoro, Philippines",
+    "address": {
+      "region": "Bangsamoro",
+      "ISO3166-2-lvl3": "PH-14",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "4.4523355",
+      "8.1236701",
+      "117.9666667",
+      "124.9797789"
+    ]
+  },
+  {
+    "place_id": 238796211,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1552120,
+    "lat": "14.1644023",
+    "lon": "121.3536525",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.526966356064833,
+    "addresstype": "region",
+    "name": "Region IV-A (CALABARZON)",
+    "display_name": "Calabarzon, Philippines",
+    "address": {
+      "region": "Calabarzon",
+      "ISO3166-2-lvl3": "PH-40",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "13.0250287",
+      "15.3018275",
+      "120.3455842",
+      "122.8635480"
+    ]
+  },
+  {
+    "place_id": 217622248,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1552192,
+    "lat": "17.6722156",
+    "lon": "121.8831043",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.525004048471368,
+    "addresstype": "region",
+    "name": "Region II (Cagayan Valley)",
+    "display_name": "Cagayan Valley, Philippines",
+    "address": {
+      "region": "Cagayan Valley",
+      "ISO3166-2-lvl3": "PH-02",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "15.7579236",
+      "21.2572899",
+      "120.7396924",
+      "122.6693891"
+    ]
+  },
+  {
+    "place_id": 240541598,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3870502,
+    "lat": "9.2517336",
+    "lon": "125.8516660",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.50679454711968,
+    "addresstype": "region",
+    "name": "Region XIII (Caraga)",
+    "display_name": "Caraga, Philippines",
+    "address": {
+      "region": "Caraga",
+      "ISO3166-2-lvl3": "PH-13",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "7.8972270",
+      "10.6061357",
+      "125.1423533",
+      "126.5957558"
+    ]
+  },
+  {
+    "place_id": 239083150,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1552195,
+    "lat": "15.3942729",
+    "lon": "120.6872959",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.537491272883223,
+    "addresstype": "region",
+    "name": "Region III (Central Luzon)",
+    "display_name": "Central Luzon, Philippines",
+    "address": {
+      "region": "Central Luzon",
+      "ISO3166-2-lvl3": "PH-03",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "14.2853000",
+      "16.5023672",
+      "119.6456081",
+      "122.3835685"
+    ]
+  },
+  {
+    "place_id": 239562820,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3625910,
+    "lat": "10.4749167",
+    "lon": "123.8644816",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.530288948502736,
+    "addresstype": "region",
+    "name": "Region VII (Central Visayas)",
+    "display_name": "Central Visayas, Philippines",
+    "address": {
+      "region": "Central Visayas",
+      "ISO3166-2-lvl3": "PH-07",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "9.3278466",
+      "11.6238718",
+      "123.2352650",
+      "124.7352175"
+    ]
+  },
+  {
+    "place_id": 219079972,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1552190,
+    "lat": "17.3597101",
+    "lon": "121.0716923",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.517497207963593,
+    "addresstype": "region",
+    "name": "Cordillera Administrative Region (CAR)",
+    "display_name": "Cordillera Administrative Region, Philippines",
+    "address": {
+      "region": "Cordillera Administrative Region",
+      "ISO3166-2-lvl3": "PH-15",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "16.1810039",
+      "18.5427723",
+      "120.4597054",
+      "121.6567558"
+    ]
+  },
+  {
+    "place_id": 240974100,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3936842,
+    "lat": "6.6481392",
+    "lon": "125.3562143",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.504871536007103,
+    "addresstype": "region",
+    "name": "Region XI (Davao Region)",
+    "display_name": "Davao Region, Philippines",
+    "address": {
+      "region": "Davao Region",
+      "ISO3166-2-lvl3": "PH-11",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "5.2306309",
+      "8.0645996",
+      "125.0522017",
+      "126.7409926"
+    ]
+  },
+    {
+    "place_id": 238985220,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3759193,
+    "lat": "11.2945278",
+    "lon": "124.9959508",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.523135137021702,
+    "addresstype": "region",
+    "name": "Region VIII (Eastern Visayas)",
+    "display_name": "Eastern Visayas, Philippines",
+    "address": {
+      "region": "Eastern Visayas",
+      "ISO3166-2-lvl3": "PH-08",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "9.7603252",
+      "12.8294255",
+      "123.8991859",
+      "126.1066524"
+    ]
+  },
+  {
+    "place_id": 217655328,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1552186,
+    "lat": "17.2023638",
+    "lon": "120.4712741",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.525937108761956,
+    "addresstype": "region",
+    "name": "Region I (Ilocos Region)",
+    "display_name": "Ilocos Region, Philippines",
+    "address": {
+      "region": "Ilocos Region",
+      "ISO3166-2-lvl3": "PH-01",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "15.6186428",
+      "18.7861854",
+      "119.6095165",
+      "120.9793829"
+    ]
+  },
+  {
+    "place_id": 239912056,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1552261,
+    "lat": "13.0106436",
+    "lon": "121.4115747",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.505890790763724,
+    "addresstype": "region",
+    "name": "MIMAROPA Region",
+    "display_name": "Mimaropa, Philippines",
+    "address": {
+      "region": "Mimaropa",
+      "ISO3166-2-lvl3": "PH-41",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "7.4179572",
+      "14.0340807",
+      "114.1440482",
+      "122.8371566"
+    ]
+  },
+  {
+    "place_id": 404090806,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 147488,
+    "lat": "14.5736108",
+    "lon": "121.0329706",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.599710618326756,
+    "addresstype": "region",
+    "name": "National Capital Region (NCR)",
+    "display_name": "Metro Manila, Philippines",
+    "address": {
+      "region": "Metro Manila",
+      "ISO3166-2-lvl3": "PH-00",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "14.3478578",
+      "14.7853355",
+      "120.7917034",
+      "121.1350232"
+    ]
+  },
+  {
+    "place_id": 241347867,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3873457,
+    "lat": "8.3979549",
+    "lon": "124.7106880",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.520023381402583,
+    "addresstype": "region",
+    "name": "Region X (Nothern Mindanao)",
+    "display_name": "Northern Mindanao, Philippines",
+    "address": {
+      "region": "Northern Mindanao",
+      "ISO3166-2-lvl3": "PH-10",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "7.4032606",
+      "9.3931111",
+      "123.5403155",
+      "125.4493218"
+    ]
+  },
+  {
+    "place_id": 241119994,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3851570,
+    "lat": "6.5647277",
+    "lon": "124.4840255",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.498675973990911,
+    "addresstype": "region",
+    "name": "Region XII (SOCCSKSARGEN)",
+    "display_name": "Soccsksargen, Philippines",
+    "address": {
+      "region": "Soccsksargen",
+      "ISO3166-2-lvl3": "PH-12",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "5.4700879",
+      "7.6553937",
+      "123.8845037",
+      "125.5582809"
+    ]
+  },
+   {
+    "place_id": 240515969,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3589982,
+    "lat": "11.2367324",
+    "lon": "122.6878187",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.533448717154706,
+    "addresstype": "region",
+    "name": "Region VI (Western Visayas)",
+    "display_name": "Western Visayas, Philippines",
+    "address": {
+      "region": "Western Visayas",
+      "ISO3166-2-lvl3": "PH-06",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "10.1939691",
+      "12.2794760",
+      "121.1450673",
+      "123.5104667"
+    ]
+  },
+  {
+    "place_id": 241021904,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3777290,
+    "lat": "7.7787234",
+    "lon": "122.7570828",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 6,
+    "importance": 0.519185412999259,
+    "addresstype": "region",
+    "name": "Region IX (Zamboanga Peninsula)",
+    "display_name": "Zamboanga Peninsula, Philippines",
+    "address": {
+      "region": "Zamboanga Peninsula",
+      "ISO3166-2-lvl3": "PH-09",
+      "country": "Philippines",
+      "country_code": "ph"
+    },
+    "boundingbox": [
+      "5.3152673",
+      "8.9950968",
+      "119.5164277",
+      "123.6875310"
+    ]
+  }
+]

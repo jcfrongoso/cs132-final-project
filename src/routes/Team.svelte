@@ -7,8 +7,8 @@
         },
         {
             name:               "Michael Sean Brian Omisol",
-            profile_picture:    "teehee",
-            about:              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel facilisis lorem. Aenean tincidunt nisl felis, in egestas lectus tincidunt quis. Morbi suscipit at lacus eu viverra. Phasellus volutpat pellentesque ligula, quis imperdiet odio faucibus nec. Curabitur at vulputate leo. Nullam id. ",
+            profile_picture:    "witch",
+            about:              "Whatever you do, do not have 6+ projects at the end of your senior year.",
         },
         {
             name:               "Eugene Kasilag",

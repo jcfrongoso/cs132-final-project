@@ -2,14 +2,14 @@
     import { base } from '$app/paths';
 
     // Place images here
-    const rq1_1 = `${base}/images/plots/4-1 Relationship between Production Volume and Economic Value.png`;
-    const rq1_2 = `${base}/images/plots/4-1 KMeans Clustering.png`;
-    const rq1_3 = `${base}/images/plots/4-1 Kmeans with regression lines.png`;
-    const rq2_1 = `${base}/images/plots/4-2 Production Volume by Region.png`;
-    const rq2_2 = `${base}/images/plots/4-2 Production Volume Distribution by Region.png`;
-    const rq3_1 = `${base}/images/plots/4-3 Production Volume Over The Years.png`;
-    const rq3_2 = `${base}/images/plots/4-2 Production Volume by Region.png`;
-    const nutshell_plot = `${base}/images/plots/5 Nutshell plot.png`;
+    import rq1_1 from `${base}/images/plots/4-1 Relationship between Production Volume and Economic Value.png`;
+    import rq1_2 from `${base}/images/plots/4-1 KMeans Clustering.png';
+    import rq1_3 from `${base}/images/plots/4-1 Kmeans with regression lines.png';
+    import rq2_1 from `${base}/images/plots/4-2 Production Volume by Region.png';
+    import rq2_2 from `${base}/images/plots/4-2 Production Volume Distribution by Region.png';
+    import rq3_1 from '$lib/images/plots/4-3 Production Volume Over The Years.png';
+    import rq3_2 from '$lib/images/plots/4-3 Production Volume Over the Years by Region.png';
+    import nutshell_plot from '$lib/images/plots/5 Nutshell plot.png';
 </script>
 
 <div class="max-w-5xl mx-auto">

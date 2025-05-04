@@ -2,8 +2,8 @@
     const content = [
         {
             name:               "Justin Clyde Frongoso",
-            profile_picture:    "teehee",
-            about:              "a g ",
+            profile_picture:    "s23330897651",
+            about:              "A retired TFT veteran and a well known malder.",
         },
         {
             name:               "Michael Sean Brian Omisol",

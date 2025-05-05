@@ -36,7 +36,6 @@
 
     import multi_value_region_dist from "$lib/images/plots/3-3-2 Economic Value Distribution for each Region.png";
     import multi_value_region_trend from "$lib/images/plots/3-3-2 Economic Value Trend for each Region.png";
-    import multi_value_region_prod from "$lib/images/plots/3-3-2 Production Volume Distribution for each Region.png";
 
     import multi_volume_species_dist from "$lib/images/plots/3-3-3 Production Volume Distribution for each Species.png";
     import multi_volume_species_trend from "$lib/images/plots/3-3-3 Production Volume Trend for each Species.png";
@@ -117,23 +116,26 @@
     <!-- Multivariate Analysis -->
     
     <h2 class="mb-2">Multivariate Analysis</h2>
-    <p class="mb-4"></p>
+    <p class="mb-4">We're now transitioning to creating analyses for multiple features. We won't delve into all groupings but rather focus only to the set of features that makes sense.</p>
 
     <h3 class="mb-2">Value - Year/Quarter per Species</h3>
+    <p class="mb-4">The first set of group includes the value of each specie as a time series. We provide below a heatmap showing the changes in value for each specie as time goes on.</p>
     <img alt="Placeholder" class="h-96" src={multi_value_species_dist} />
+    <p class="mb-4">Aside from the heatmap, we can also create multiple boxplots to further determine the gap on the distribution of each specie.</p>
     <img alt="Placeholder" class="h-96" src={multi_value_species_trend} />
-    <p class="mb-4"></p>
+    <p class="mb-4">As we can see from the heatmap above, almost half of the available species has very low value compared to Milkfish, Tilapia, and Tiger Prawn (visually judged). Some of these species include mussel, mudfish, oyster, prawns, catfish, and carp which I think are luxury species when based on the choices of the common people, thus contributing to little value. As for the boxplots, we can see that the distribution for Milkfish do have a larger gap as compared to the other species which have lower quantitative value.</p>
     
     <h3 class="mb-2">Value - Year/Quarter per Region</h3>
-    <img alt="Placeholder" class="h-96" src={multi_value_region_dist} />
+    <p class="mb-4">Next up is the time series changes in value per region. We again utilize the same plot function above.</p>
     <img alt="Placeholder" class="h-96" src={multi_value_region_trend} />
-    <img alt="Placeholder" class="h-96" src={multi_value_region_prod} />
-    <p class="mb-4"></p>
+    <img alt="Placeholder" class="h-96" src={multi_value_region_dist} />
+    <p class="mb-4">Similar to our findings earlier, Central Luzon has high aquaculture value. Through visual analysis, we can see that Central Luzon leads on all the Year-Quarter combinations in terms of value. As for the following region, there's no clear contender as to who to watch for.</p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Species</h3>
+    <p class="mb-4">The next few plots below are the `Volume` feature equivalent of the `Value` plots above.</p>
     <img alt="Placeholder" class="h-96" src={multi_volume_species_dist} />
     <img alt="Placeholder" class="h-96" src={multi_volume_species_trend} />
-    <p class="mb-4"></p>
+    <p class="mb-4">Seaweed clearly has the highest volume output compared to the other species.</p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Region</h3>
     <img alt="Placeholder" class="h-96" src={multi_volume_region_dist} />

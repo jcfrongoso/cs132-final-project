@@ -71,7 +71,7 @@
             <li>2. We are investigating a linear relationship between the variables</li>
             <li>3. The hypothesis is directional (specifically testing for a positive correlation)</li>
         </ul>
-        <img alt="Placeholder" class="w-xl" src="{res4_1}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{res4_1}" />
         <h4>Statistical Analysis Results</h4>
         <p class="mb-2">
             The Pearson correlation coefficient (r) calculated between production volume and economic value is 0.4275, indicating a moderate positive linear relationship between the two variables. According to established statistical guidelines, correlation coefficients between 0.3 and 0.5 typically represent moderate positive correlations.
@@ -83,11 +83,11 @@
         <p class="mb-2">
             To visually support this claim, we can utilize our plot from 3.2.7 but now we add a regression line.
         </p>
-        <img alt="Placeholder" class="w-xl" src="{rq1_1}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{rq1_1}" />
         <p class="mb-2">The scatter plot reveals an interesting pattern that might not be fully captured by a single correlation coefficient. Upon visual inspection, there appear to be two distinct clusters within the data, suggesting a potentially more complex relationship. With this, we use K-means clustering to identify the two visually identifiable clustering.</p>
-        <img alt="Placeholder" class="w-xl" src="{rq1_2}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{rq1_2}" />
         <p class="mb-2">The plot above is quite interesting as compared to what we could have imagined (most would easily halve the original scatter plot into two by creating a dividing line that will cluster the original scatter plot). But does these two plots inherit the same regression line from the original plot?</p>
-        <img alt="Placeholder" class="w-xl" src="{rq1_3}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{rq1_3}" />
         <p class="mb-2">
             The first clustering has a high positive coefficient while the second clustering tends to have a lower negative coefficient. Given these two plots, it is hard to conclude what characteristics can be discerned from approximately 66% of production volume values. But after some point, economic value tends to die down.
         </p>
@@ -121,7 +121,7 @@
         <p class="mb-2">
             For this research question, we are dealing with a categorical variable as a predictor (region) and a quantitative outcome variable (production volume). Based on this, the appropriate statistical test for comparing more than two independent groups is the Kruskal-Wallis H test, a non-parametric alternative to one-way ANOVA when normality cannot be assumed.
         </p>
-        <img alt="Placeholder" class="w-xl" src="{res4_2}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{res4_2}" />
         <h4>
             Statistical Analysis Results
         </h4>
@@ -140,7 +140,7 @@
         <p class="mb-2">
             This can be further shown by the boxplots below, excluding outliers for each region. BARMM is quite an interesting case having a healthy production volume. If we geographically locate BARMM, it is located in the south-western part of the Philippines and is comprised of several islands and a mainland Mindanao area. Given its geographical location, we can already infer as to why BARMM produces such high highs in terms of volume.
         </p>
-        <img alt="Placeholder" class="w-xl" src='{rq2_1}' />
+        <img alt="Placeholder" class="w-xl my-4" src='{rq2_1}' />
         <p class="mb-2">If we think about it, several other regions especially in the Visayas are surrounded by large bodies of water but if we take a closer look, Western Visayas have greater proportions compared to Central and Eastern Visayas. 
             Western Visayas has a well-established and well-supported aquaculture industry, backed by strong infrastructure and government investment. Key highlights include Capiz as the seafood capital, the Iloilo Fish Port Complex as a major trading and processing hub, a <a href="https://repository.seafdec.org.ph/bitstream/handle/10862/6065/AQD-Matters-2021-03_04.pdf" style="color:blue" target="_blank">rehabilitated hatchery</a> in Aklan producing up to 10 million bangus fry annually (operational since 2021), and plans for a <a href="https://www.pna.gov.ph/articles/1193131" style="color: blue;" target="_blank">₱30 million aquaculture feed mill</a> to lower feed costs.
             Central Visayas engages in aquaculture, particularly in Cebu and Siquijor, but faces economic and social challenges. A <a href="https://link.springer.com/article/10.7603/s40934-015-0014-0" style="color: blue;" target="_blank">2015</a> study found that while the sector offers employment, jobs are often non-permanent and poverty remains high in surrounding communities. Most farms use basic infrastructure like mud-bottom ponds and rely on commercial feed and free-flowing water systems, raising concerns about long-term sustainability.
@@ -179,7 +179,7 @@
                 It's resistant to outliers which appear present in the quarterly production volumes
             </li>
         </ul>
-        <img alt="Placeholder" class="w-xl" src='{res4_3}' />
+        <img alt="Placeholder" class="w-xl my-4" src='{res4_3}' />
         <h4>
             Statistical Analysis Results
         </h4>
@@ -196,8 +196,8 @@
             Visual Analysis and Implications
         </h4>
         <p>This can be further illustrated by the time series graph below which shows that there is indeed no apparent trend for the past five years.</p>
-        <img alt="Placeholder" class="w-xl" src="{rq3_1}" />
-        <img alt="Placeholder" class="w-xl" src="{rq3_2}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{rq3_1}" />
+        <img alt="Placeholder" class="w-xl my-4" src="{rq3_2}" />
         <p class="mb-2">
             From these plots, we get to learn that there are no apparent upward or downward patterns for quarterly fluctuations. There are some notable peaks that occurred in Q3 2022, Q4 2021, and Q3 2023, with the highest volume reaching nearly 6,000 metric tons. Q4 2021 and Q3 2022 are interesting cases because these are times where we're still under the Covid 19 pandemic.
         </p>

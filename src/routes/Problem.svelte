@@ -64,7 +64,7 @@
             <h3>
                 Research Question {increment()}
             </h3>
-            <p class="min-h-0 sm:min-h-15">
+            <p class="min-h-0 sm:min-h-15 mb-4">
                 {details.question}
             </p>
             <!-- Assumes that details[1] != details[2] are empty. -->
@@ -72,7 +72,7 @@
             <h4 class="underline">
                 Null Hypothesis
             </h4>
-            <p class="min-h-0 sm:min-h-30">
+            <p class="min-h-0 sm:min-h-20">
                 {details.null}
             </p>
             <h4 class="underline">

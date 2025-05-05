@@ -190,11 +190,14 @@
     <p class="mb-4">The next few plots below are the `Volume` feature equivalent of the `Value` plots above.</p>
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={multi_volume_species_dist} />
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={multi_volume_species_trend} />
-    <p class="mb-4">Seaweed clearly has the highest volume output compared to the other species.</p>
+    <p class="mb-4">Seaweed clearly has the highest volume output among all aquaculture species, likely because it is relatively easy to cultivate, requires minimal maintenance, and is well-suited for small-scale production. Its accessibility allows even low-capital communities to engage in farming, contributing to its widespread adoption and consistently high output.</p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Region</h3>
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={multi_volume_region_dist} />
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={multi_volume_region_trend} />
-    <p class="mb-4"></p>
+    <p class="mb-4">BARMM consistently leads in aquaculture production volume, largely due to extensive seaweed farming, as shown by its high median and wide distribution in the boxplot and sustained dominance in the heatmap. 
+        CAR ranks second, with stable yet moderate output likely driven by freshwater and inland aquaculture systems. 
+        In contrast, most other regions exhibit lower and less variable production volumes, reflecting smaller-scale or less intensive aquaculture operations. 
+        These differences highlight how geography, species specialization, and investment influence regional output.</p>
     
 </div>

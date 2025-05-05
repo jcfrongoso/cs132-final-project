@@ -46,12 +46,12 @@
 
 <div class="max-w-5xl mx-auto">
     <h1 class="mb-4">Exploratory Data Analysis</h1>
-    <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 pb-8 pt-4 px-4" role="alert">
+    <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 pb-8 pt-4 px-4" role="alert">
         <p class="font-bold">Note:</p>
         <p>This is a more user-friendly look to the analysis. If you want to check the Colab Notebook, check it through the button below.</p>
         <br>
         <a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" href="https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl#scrollTo=MQ2Hz2yBssEo">Google Colab link</a>
-      </div>
+    </div>
     <p class="mb-4">We now proceed with exploring our dataset through several graphs, plots, and analyses. The first thing that we'll do is univariate analysis where we analyze basic statistics of a feature from our dataset.</p>
 
     <h2 class="mb-2">Univariate Analysis</h2>

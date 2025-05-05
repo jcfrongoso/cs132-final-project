@@ -47,15 +47,13 @@
             The fourth step was to combine both datasets into a finalized dataset that will be used for the analaysis step. The finalized dataset can be found <a target="_blank" rel="noreferrer" class="font-medium text-blue-600 hover:underline" href="{finalized_dataset}">here</a>.
         </li>
     </ul>
-    <div>
-        For references, you may refer to part 1 and 2 of the Google Colab notebook below.
-        <a href="{colab_link}" target="_blank">
-            <button style="margin-top: 10px; padding: 10px 15px; background-color: #4285F4; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                Open in Google Colab
-            </button>
-        </a>
+    <br>
+    <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 pb-8 pt-4 px-4" role="alert">
+        <p class="font-bold">Note:</p>
+        <p>For references, you may refer to part 1 and 2 of the Google Colab notebook below.</p>
+        <br>
+        <a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" href="https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl#scrollTo=MQ2Hz2yBssEo">Google Colab link</a>
     </div>
-    <h2 class="mb-2">Data Visualization</h2>
     
 
 </div>

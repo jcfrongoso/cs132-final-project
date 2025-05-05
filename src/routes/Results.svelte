@@ -36,7 +36,7 @@
         Finally, we analyzed groups of features in order to identify trends from each species and region.
     </p>
     <p class="mb-4">
-
+        Based on our plots, the BARMM region leads in production volume while Central Luzon dominates in economic value. Among species, milkfish generates the highest economic value while P. Vannamei (whiteleg shrimp) shows consistently high production volumes. Seaweed production remains significant across multiple quarters, with substantial regional variations in both production and economic returns. The box plots reveal that grouper has the highest economic value distribution per unit despite not having the largest production volume, indicating it's a high-value species compared to others. These reveals distinct regional variation, reflecting diverse ecological conditions and market specializations throughout the Philippine archipelago.
     </p>
     <p class="mb-4">
         <a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" href="{base}/exploratory-data-analysis">Click here to see the process.</a>

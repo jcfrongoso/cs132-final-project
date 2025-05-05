@@ -3,18 +3,28 @@
 
     // Place images here
     // Univariate images.
-    import uni_species from '$lib/images/teehee.png';
-    import uni_geolocation from '$lib/images/teehee.png';
-    import uni_volume from '$lib/images/teehee.png';
-    import uni_value from '$lib/images/teehee.png';
+    import uni_volume_boxplot from '$lib/images/plots/3-1-3 Boxplot of Production Volume.png';
+    import uni_volume_boxplot_no_outlier from '$lib/images/plots/3-1-3 Boxplot of Production Volume - No Outliers.png';
+    import uni_volume_histogram from '$lib/images/plots/3-1-3 Histogram of Production Volume.png';
+    import uni_value_boxplot from '$lib/images/plots/3-1-4 Boxplot of Economic Value.png';
+    import uni_value_boxplot_no_outlier from '$lib/images/plots/3-1-4 Boxplot of Economic Value - No Outlier.png';
+    import uni_value_distribution from '$lib/images/plots/3-1-4 Distribution of Economic Value.png';
 
     // Bivariate images.
-    import bi_species_value from '$lib/images/teehee.png';
-    import bi_species_volume from '$lib/images/teehee.png';
+    import bi_species_value_mean from '$lib/images/plots/3-2-1 Mean Economic Value of each Species.png';
+    import bi_species_value_total from '$lib/images/plots/3-2-1 Total Economic Value of each Species.png';
+
+    import bi_species_volume_total from '$lib/images/plots/3-2-2 Total Production Volume of each Species.png';
+    
+    import bi_geolocation_value_mean from "src/lib/images/plots/3-2-3 Mean Economic Value for each Region.png"
+    import bi_geolocation_value_total from "src/lib/images/plots/3-2-3 Total Economic Value for each Region.png"
+
     import bi_geolocation_value from '$lib/images/teehee.png';
     import bi_geolocation_volume from '$lib/images/teehee.png';
+
     import bi_value_yearquarter from '$lib/images/teehee.png';
     import bi_volume_yearquarter from '$lib/images/teehee.png';
+
     import bi_value_volume from '$lib/images/teehee.png';
 
     // Mutlivariate images.
@@ -30,37 +40,40 @@
     <p class="mb-4"></p>
     
     <h3 class="mb-2">Species</h3>
-    <img alt="Placeholder" class="w-1/6" src={uni_species} />
-
     <p class="mb-4"></p>
+
     <h3 class="mb-2">Geolocation</h3>
-    <img alt="Placeholder" class="w-1/6" src={uni_geolocation} />
     <p class="mb-4"></p>
 
     <h3 class="mb-2">Volume</h3>
-    <img alt="Placeholder" class="w-1/6" src={uni_volume} />
+    <img alt="Placeholder" class="w-1/6" src={uni_volume_boxplot} />
+    <img alt="Placeholder" class="w-1/6" src={uni_volume_boxplot_no_outlier} />
+    <img alt="Placeholder" class="w-1/6" src={uni_volume_histogram} />
     <p class="mb-4"></p>
     
     <h3 class="mb-2">Value</h3>
-    <img alt="Placeholder" class="w-1/6" src={uni_value} />
+    <img alt="Placeholder" class="w-1/6" src={uni_value_boxplot} />
+    <img alt="Placeholder" class="w-1/6" src={uni_value_boxplot_no_outlier} />
+    <img alt="Placeholder" class="w-1/6" src={uni_value_distribution} />
     <p class="mb-4"></p>
     
     <!-- Bivariate Analysis -->
     
     <h2 class="mb-2">Bivariate Analysis</h2>
     <p class="mb-4"></p>
-    
 
     <h3 class="mb-2">Species - Value</h3>
-    <img alt="Placeholder" class="w-1/6" src={bi_species_value} />
+    <img alt="Placeholder" class="w-1/6" src={bi_species_value_mean} />
+    <img alt="Placeholder" class="w-1/6" src={bi_species_value_total} />
     <p class="mb-4"></p>
 
     <h3 class="mb-2">Species - Volume</h3>
-    <img alt="Placeholder" class="w-1/6" src={bi_species_volume} />
+    <img alt="Placeholder" class="w-1/6" src={bi_species_volume_total} />
     <p class="mb-4"></p>
 
     <h3 class="mb-2">Geolocation - Value</h3>
-    <img alt="Placeholder" class="w-1/6" src={bi_geolocation_value} />
+    <img alt="Placeholder" class="w-1/6" src={bi_geolocation_value_mean} />
+    <img alt="Placeholder" class="w-1/6" src={bi_geolocation_value_total} />
     <p class="mb-4"></p>
 
     <h3 class="mb-2">Geolocation - Volume</h3>

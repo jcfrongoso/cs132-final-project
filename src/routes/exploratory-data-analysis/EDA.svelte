@@ -47,86 +47,197 @@
 
 <div class="max-w-5xl mx-auto">
     <h1 class="mb-4">Exploratory Data Analysis</h1>
+    <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 pb-8 pt-4 px-4" role="alert">
+        <p class="font-bold">Note:</p>
+        <p>This is a more user-friendly look to the analysis. If you want to check the Colab Notebook, check it through the button below.</p>
+        <br>
+        <a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" href="https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl#scrollTo=MQ2Hz2yBssEo">Google Colab link</a>
+      </div>
+    <p class="mb-4">We now proceed with exploring our dataset through several graphs, plots, and analyses. The first thing that we'll do is univariate analysis where we analyze basic statistics of a feature from our dataset.</p>
+
     <h2 class="mb-2">Univariate Analysis</h2>
-    <p class="mb-4"></p>
     
     <h3 class="mb-2">Species</h3>
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        For <code>Species</code>, the only analysis that we can do is to identify what set of species and the number of species included in the dataset.
+    </p>
+    <p class="mb-4">
+        Based on the dataset, there's currently 19 different species included in our dataset (excluding 'All Species'). Since we want to exclude 'All Species', we proceed to fix our dataset.
+    </p>
+    <p class="mb-4">
+        We can still perform the <code>describe()</code> method in the <code>Species</code> feature but the values that we'll get simply summarizes some features of the dataset and some that were presented earlier.
+    </p>
+    <p class="mb-4">
+        As we can see, the <code>count</code> attribute in the <code>describe</code> call earlier is equal to the number of samples we have. The <code>unique</code> attribute also pertains to the number of unique species in the dataset which was brought up earlier and the <code>freq</code> attribute is simply the frequency of each specie in the dataset (it's basically # of samples / # of unique species).
+    </p>
 
     <h3 class="mb-2">Geolocation</h3>
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        As for the <code>Geolocation</code>, we have all 17 regions in the Philippines since they were all available from the data source.
+    </p>
 
     <h3 class="mb-2">Volume</h3>
+    <p class="mb-4">
+        Moving on, we proceed to the <code>Volume</code> feature. Since this is numerical variable, the <code>describe()</code> method provides a different set of attributes.
+    </p>
+    <p class="mb-4">
+        From here, we can see that there is a very large gap between the 75% quantile and the max value. This is further supported by the very large standard deviation which means that our data "could be" clumped between 1.24 and 278 and might go as high as 328,205. To prove this point, we provide a boxplot below.
+    </p>
     <img alt="Placeholder" class="h-96" src={uni_volume_boxplot} />
+    <p class="mb-4">
+        This may not seem like a "very intuitive" box plot but it provides us a view that there's quite a substantial amount of <code>Volume</code> data that is "extraneous". It is quite interesting to identify which species or timeframe contribute to this occurrence. Since the graph above is quite scuffed, we provide a boxplot below that contains no "outliers".
+    </p>
     <img alt="Placeholder" class="h-96" src={uni_volume_boxplot_no_outlier} />
+    <p class="mb-4"> 
+        We can't fully view how they are distributed so below is a histogram showing the distribution of aquaculture volume.
+    </p>
     <img alt="Placeholder" class="h-96" src={uni_volume_histogram} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        As we can see from the histogram above, the graph is indeed positively skewed which means that there are indeed instances where the <code>Volume</code> value is really high.
+    </p>
     
     <h3 class="mb-2">Value</h3>
+    <p class="mb-4">
+        The same set of visualizations can be used for the `Value` feature since we are dealing with a quantitative value.
+    </p>
+    <p class="mb-4">
+        Compared to the `Volume` feature, the `Value` feature contains quantitatively higher degree in values but as we can see the difference between the 75% quantile and the maximum value is still large. This can be further proven by the boxplot below.
+    </p>
     <img alt="Placeholder" class="h-96" src={uni_value_boxplot} />
+    <p class="mb-4">
+        There are still a considerable amount of "outliers" in our `Value` column and a similar question arises: what causes this occurrence? Hopefully, we get an answer to this question later. Again, we repeat the boxplot by removing the outliers and by also providing a histogram to determine the distribution of the `Value` column.
+    </p>
     <img alt="Placeholder" class="h-96" src={uni_value_boxplot_no_outlier} />
     <img alt="Placeholder" class="h-96" src={uni_value_distribution} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        Similar to the `Volume` column, the histogram for the `Value` column is also positively skewed with the values going to the right decreasing to around 0 or 1 count (eyeballed values). Since we cannot infer something new from these plots, we proceed to bivariate analysis to further analyze pairings of features and hopefully get to answer the questions that we found earlier.
+    </p>
     
     <!-- Bivariate Analysis -->
     
     <h2 class="mb-2">Bivariate Analysis</h2>
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        Bivariate analysis investigates the relationship between two variables. (Masud, n.d.) For this section, we pair up features, plot graphs for each pairing, and identify relationships/findings based on these plots.
+    </p>
 
     <h3 class="mb-2">Species - Value</h3>
-    <img alt="Placeholder" class="h-96" src={bi_species_value_mean} />
+    <p class="mb-4">
+        We first begin with the `Species`-`Value` pairing. Given the nature of these two features, we proceed to use a horizontal bar chart to identify the total `Value` of each specie.
+    </p>
     <img alt="Placeholder" class="h-96" src={bi_species_value_total} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        We can see that the Milkfish specie contributes to the highest value compared to the remainder. We can infer from here that the Milkfish specie contributes to the extraneous values from our `Value` data earlier. Note that we used `sum` for our grouping in this plot. Let's check if `mean` would have a different plot.
+    </p>
+    <img alt="Placeholder" class="h-96" src={bi_species_value_mean} />
+    <p class="mb-4">
+        If we clearly think about it, it doesn't actually contribute to anything new since the values were simply "normalized" in some way. Since there's nothing else to see here, we proceed to the next pairing.
+    </p>
+
 
     <h3 class="mb-2">Species - Volume</h3>
+    <p class="mb-4">We proceed with the `Species` - `Volume` pairing. We can also use the same set of plots above since `Volume` is also a quantitative variable.</p>
     <img alt="Placeholder" class="h-96" src={bi_species_volume_total} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        Wow, this is something. Milkfish contributes to the highest value but seaweeds contribute to the highest volume. Why could this be?
+    </p>
+    <p class="mb-4">
+        Seaweeds typically reach harvestable size in around 50 days (~1.6 months) <a href="https://www.seafdec.org.ph/seaweed-kappaphycus" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">[SEAFDEC]</a>, allowing for multiple harvests each year. In contrast, milkfish require 3–4 months to grow in brackishwater ponds and up to 6–8 months in marine pens and cages <a href="https://www.fao.org/fishery/affris/species-profiles/milkfish/production" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">[FAO]</a>. The faster growth cycle of seaweeds enables more frequent harvests, contributing to higher annual production volumes. Additionally, seaweed farming is less labor- and resource-intensive, as it requires no feed or active water management. It also involves lower capital investment and technical skill, making it more accessible to small-scale coastal producers.
+    </p>
+    <p class="mb-4">
+        This finding leads us to the cause of the outliers from the boxplot earlier.
+    </p>
 
     <h3 class="mb-2">Geolocation - Value</h3>
+    <p class="mb-4">
+        Next up, we have `Geolocation` vs `Value`. Here, we identify if there's a difference between the value of aquaculture per region.
+    </p>
     <img alt="Placeholder" class="h-96" src={bi_geolocation_value_mean} />
     <img alt="Placeholder" class="h-96" src={bi_geolocation_value_total} />
-    <img alt="Placeholder" class="h-96" src={bi_geolocation_value_3} />
-    <p class="mb-4"></p>
+    <!-- <img alt="Placeholder" class="h-96" src={bi_geolocation_value_3} /> -->
+    <p class="mb-4">
+        <!-- TODO: Still have to wait. -->
+    </p>
 
     <h3 class="mb-2">Geolocation - Volume</h3>
+    <p class="mb-4">
+        Next up, we have the `Geolocation` - `Volume` pairing. Similar to the plots above, we can do the same set of visuals for this pairing.
+    </p>
     <img alt="Placeholder" class="h-96" src={bi_geolocation_volume} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        Again, the total volume for BARMM is quite large in number compared to the following regions. Locatin-wise, BARMM is at the southwestern portion of the Philippines and is comprised of several islands surrounded by a significantly large body of water. This might be a reason as to why there's a "significant" discrepancy in `Volume` compared to other regions especially to those in the Visayas regions since they are also surrounded significantly by bodies of water.
+    </p>
 
     <h3 class="mb-2">Value - Year/Quarter</h3>
+    <p class="mb-4">
+        This next pairing may not seem like a pair but the `Year` and `Quarter` features can be actually combined to provide us a time series analysis of `Value` and `Volume` (next section). For this part, we will be plotting a line chart for the `Value` variable.
+    </p>
     <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_1} />
-    <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_2} />
-    <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_3} />
-    <p class="mb-4"></p>
+    <!-- <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_2} /> -->
+    <!-- <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_3} /> -->
+    <p class="mb-4">
+        Based on this line chart, we cannot actually discern any particular trend without performing a linear regression, which we can do but for now we will only provide a visualization.
+    </p>
     
     <h3 class="mb-2">Volume - Year/Quarter</h3>
+    <p class="mb-4">
+        Second to the last is the `Volume` time series where we can plot a line chart to determine if a particular trend is occurring.
+    </p>
     <img alt="Placeholder" class="h-96" src={bi_volume_yearquarter} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        Similar to our findings earlier, there's also no discernable trend that can be visually found in this graph.
+    </p>
     
+
     <h3 class="mb-2">Value - Volume</h3>
+    <p class="mb-4">
+        Finally, we have the `Value` - `Volume` pair. Both values are quantitative values so we utilized a scatter plot.
+    </p>
     <img alt="Placeholder" class="h-96" src={bi_value_volume} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        This is quite an interesting plot since we can say through visual eyeballing that there are two probable clusters from this graph but we cannot yet conclude if this is so but for now we can state that there are two probable clusters pertaining to different line regressions.
+    </p>
     
     
     <!-- Multivariate Analysis -->
     
     <h2 class="mb-2">Multivariate Analysis</h2>
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        We're now transitioning to creating analyses for multiple features. We won't delve into all groupings but rather focus only to the set of features that makes sense.
+    </p>
 
     <h3 class="mb-2">Value - Year/Quarter per Species</h3>
-    <img alt="Placeholder" class="h-96" src={multi_value_species_dist} />
+    <p class="mb-4">
+        The first set of group includes the value of each specie as a time series. We provide below a heatmap showing the changes in value for each specie as time goes on.
+    </p>
     <img alt="Placeholder" class="h-96" src={multi_value_species_trend} />
-    <p class="mb-4"></p>
+    <p class="mb-4">
+        Aside from the heatmap, we can also create multiple boxplots to further determine the gap on the distribution of each specie.
+    </p>
+    <img alt="Placeholder" class="h-96" src={multi_value_species_dist} />
+    <p class="mb-4">
+        As we can see from the heatmap above, almost half of the available species has very low value compared to Milkfish, Tilapia, and Tiger Prawn (visually judged). Some of these species include mussel, mudfish, oyster, prawns, catfish, and carp which I think are luxury species when based on the choices of the common people, thus contributing to little value. As for the boxplots, we can see that the distribution for Milkfish do have a larger gap as compared to the other species which have lower quantitative value.
+    </p>
     
     <h3 class="mb-2">Value - Year/Quarter per Region</h3>
-    <img alt="Placeholder" class="h-96" src={multi_value_region_dist} />
+    <p class="mb-4">
+        Next up is the time series changes in value per region. We again utilize the same plot function above.
+    </p>
     <img alt="Placeholder" class="h-96" src={multi_value_region_trend} />
-    <img alt="Placeholder" class="h-96" src={multi_value_region_prod} />
-    <p class="mb-4"></p>
+    <img alt="Placeholder" class="h-96" src={multi_value_region_dist} />
+    <!-- <img alt="Placeholder" class="h-96" src={multi_value_region_prod} /> -->
+    <p class="mb-4">
+        Similar to our findings earlier, Central Luzon has high aquaculture value. Through visual analysis, we can see that Central Luzon leads on all the Year-Quarter combinations in terms of value. As for the following region, there's no clear contender as to who to watch for.
+    </p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Species</h3>
-    <img alt="Placeholder" class="h-96" src={multi_volume_species_dist} />
+    <p class="mb-4">
+        The next two heatmaps is the `Volume` feature equivalent of the `Value` plots above.
+    </p>
     <img alt="Placeholder" class="h-96" src={multi_volume_species_trend} />
-    <p class="mb-4"></p>
+    <img alt="Placeholder" class="h-96" src={multi_volume_species_dist} />
+    <p class="mb-4">
+        Seaweed clearly has the highest volume output compared to the other species.
+    </p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Region</h3>
     <img alt="Placeholder" class="h-96" src={multi_volume_region_dist} />

@@ -37,6 +37,8 @@
         </ul>
     </nav> -->
     
+    <!-- From: https://www.creative-tim.com/twcomponents/component/floating-side-bar  -->
+
     <nav class="z-20 flex shrink-0 grow-0 justify-around gap-4 border-t border-gray-200 bg-white/50 p-2.5 shadow-lg backdrop-blur-lg dark:border-slate-600/60 dark:bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border"
     >
     {#each nav_items as item}

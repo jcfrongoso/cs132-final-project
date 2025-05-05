@@ -140,8 +140,6 @@
         This next pairing may not seem like a pair but the <code>Year</code> and <code>Quarter</code> features can be actually combined to provide us a time series analysis of <code>Value</code> and <code>Volume</code> (next section). For this part, we will be plotting a line chart for the <code>Value</code> variable.
     </p>
     <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_1} />
-    <!-- <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_2} /> -->
-    <!-- <img alt="Placeholder" class="h-96" src={bi_value_yearquarter_3} /> -->
     <p class="mb-4">
         Based on this line chart, we cannot actually discern any particular trend without performing a linear regression, which we can do but for now we will only provide a visualization.
     </p>

@@ -7,6 +7,7 @@
     import Data from './Data.svelte';
     import Preprocessing from './Preprocessing.svelte';
     import Results from './Results.svelte';
+    import Nutshell from './Nutshell.svelte';
     import Team from './Team.svelte';
 </script>
 
@@ -15,7 +16,7 @@
     <Hero />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
+<!-- <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300"> -->
 
 <!-- Overview -->
 <section class="my-8 mx-8 sm:mx-auto" id="Overview">
@@ -50,6 +51,11 @@
 <!-- Results -->
 <section class="my-8 mx-8 sm:mx-auto" id="Results">
     <Results />
+</section>
+
+<!-- Results -->
+<section class="my-8 mx-8 sm:mx-auto" id="Nutshell">
+    <Nutshell />
 </section>
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">

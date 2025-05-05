@@ -1,0 +1,9 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/exploratory-data-analysis": [
+		"src/routes/+layout.js"
+	]
+}

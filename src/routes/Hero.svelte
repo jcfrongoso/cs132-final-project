@@ -4,7 +4,7 @@
 </script>
 <div class="max-w-5xl mx-auto h-screen text-white z-10">
     <div class="absolute inset-0 ">
-        <img class="h-screen" src="{bg}" alt="Hero Section Image"/>
+        <img class="h-screen" src="/images/hero_section.jpg" alt="Hero Section Image"/>
         <div class="absolute inset-0 bg-black opacity-50"></div>
       </div>
     <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">

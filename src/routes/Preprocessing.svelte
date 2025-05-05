@@ -1,29 +1,6 @@
 <script>
     import { base } from '$app/paths';
 
-    // Place images here
-    // Univariate images.
-    import uni_species from '$lib/images/teehee.png';
-    import uni_geolocation from '$lib/images/teehee.png';
-    import uni_volume from '$lib/images/teehee.png';
-    import uni_value from '$lib/images/teehee.png';
-    
-    // Bivariate images.
-    import bi_species_value from '$lib/images/teehee.png';
-    import bi_species_volume from '$lib/images/teehee.png';
-    import bi_geolocation_value from '$lib/images/teehee.png';
-    import bi_geolocation_volume from '$lib/images/teehee.png';
-    import bi_value_yearquarter from '$lib/images/teehee.png';
-    import bi_volume_yearquarter from '$lib/images/teehee.png';
-    import bi_value_volume from '$lib/images/teehee.png';
-
-    // Mutlivariate images.
-    import multi_value_species from '$lib/images/teehee.png';
-    import multi_value_region from '$lib/images/teehee.png';
-    import multi_volume_species from '$lib/images/teehee.png';
-    import multi_volume_region from '$lib/images/teehee.png';
-
-
     let finalized_dataset = "https://docs.google.com/spreadsheets/d/1GGl72rv4w5Nj0xWuO4UrPLCey6OTtPAnVTV8sImYsqU/edit?usp=sharing";
     let colab_link = "https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl?usp=sharing";
 </script>

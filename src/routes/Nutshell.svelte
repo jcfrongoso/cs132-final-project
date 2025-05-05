@@ -9,5 +9,5 @@
     <p class="mb-4">
         Or it could be that the disparity lies in access to aquaculture infrastructure, policy support, and investment in technology. BARMM, for instance, dominates production—suggesting that when regions are empowered, productivity can skyrocket regardless of long-standing challenges. Meanwhile, the map also reveals that economic value doesn’t always correlate directly with production volume, hinting at deeper systemic issues in pricing, value chains, and market access. This further emphasizes the need for a more equitable and strategic approach to aquaculture development across regions.
     </p>
-    <img alt="Placeholder" class="w-5xl my-4 mx-auto" src="{nutshell_plot}" />
+    <img alt="Placeholder" class="w-5xl my-4 mx-auto" src="/images/plots/5_Nutshell_plot.png" />
 </div>

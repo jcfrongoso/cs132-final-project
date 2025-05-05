@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+@theme {
+    --font-roboto: "Roboto", sans-serif; 
+    --font-merriweather: "Merriweather", sans-serif; 
+}
+
 @layer base {
     h1, h2 {
-        @apply font-bold;
+        @apply font-bold font-merriweather;
     }
     h3, h4 {
-        @apply font-semibold;
+        @apply font-semibold font-merriweather;
     }
     h1 {
         @apply text-2xl sm:text-4xl;
@@ -24,9 +31,9 @@
         @apply text-base sm:text-lg;
     }
     p {
-        @apply text-justify not-sm:text-sm;
+        @apply text-justify not-sm:text-sm font-roboto;
     }
     ul {
-        @apply text-justify not-sm:text-sm;
+        @apply text-justify not-sm:text-sm font-roboto;
     }
 }

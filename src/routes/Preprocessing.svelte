@@ -32,7 +32,7 @@
     <p class="mb-4">
         For data preporcessing, four major steps were used on both dataset to arrive on the combined final dataset. Before proceeding to the four major steps, a preliminary check was done on both datasets to gain a brief understanding about the structure and format of both datasets.
     </p>
-    <ul class="list-inside list-disc">
+    <ul class="pl-4 list-outside list-disc">
         <li>
             The first step done was to check the structure of both datasets. On our Colab notebook, we were able to identify that both datasets have the same structure: both contains species, geolocation, and the quarterly values/volumes for each species/geolocation grouping and a wide formatting due to the nature on how quarterly value/volumes were structured.
         </li>

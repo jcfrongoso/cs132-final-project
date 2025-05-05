@@ -203,7 +203,7 @@
                 It's resistant to outliers which appear present in the quarterly production volumes
             </li>
         </ul>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src='/images/results/4-3.png' />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src='{base}/images/results/4-3.png' />
         <h4 class="mb-4">
             Statistical Analysis Results
         </h4>
@@ -220,8 +220,8 @@
             Visual Analysis and Implications
         </h4>
         <p>This can be further illustrated by the time series graph below which shows that there is indeed no apparent trend for the past five years.</p>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/plots/4-3_Production_Volume_Over_The_Years.png" />
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/plots/4-3_Production_Volume_Over_the_Years_by_Region.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/plots/4-3_Production_Volume_Over_The_Years.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/plots/4-3_Production_Volume_Over_the_Years_by_Region.png" />
         <p class="mb-2">
             From these plots, we get to learn that there are no apparent upward or downward patterns for quarterly fluctuations. There are some notable peaks that occurred in Q3 2022, Q4 2021, and Q3 2023, with the highest volume reaching nearly 6,000 metric tons. Q4 2021 and Q3 2022 are interesting cases because these are times where we're still under the Covid 19 pandemic.
         </p>

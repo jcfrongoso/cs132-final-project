@@ -16,6 +16,29 @@
     <h1 class="mb-4">Results</h1>
     <h2 class="mb-4">Exploratory Data Analysis</h2>
     <p class="mb-4">
+        Now that we've successfully preprocessed our data, we proceed to visualize and analyze our dataset through a series of plots from univariate to multivariate analyses.
+    </p>
+    <h3>Univariate Analysis</h3>
+    <p class="mb-4">
+        Univariate analysis focuses on the smaller picture of identifying characteristics of a feature from our dataset. On our Colab file, we were able to plot several of them for each possible feature.
+    </p>
+    <p class="mb-4">
+        Based on our plots, we were able to identify that our data contained a sizeable amount of values that are past 3 standard deviations. We won't classify them as outliers and eventually remove them because they are values that were gathered by professionals and with our trust in them, we assure that the data gathered weren't faulty for the next few section of this portfolio. This means that the distribution of our data is prominently righ-skewed followed by a very long tail. The outlier values actually highlight the presence of large producers in the country while the majority of the production entities produce at smaller volumes.</p>
+    <h3>Bivariate Analysis</h3>
+    <p class="mb-4">
+         Bivariate analysis on the other hand pairs up two features and identifies relations between them.
+    </p>
+    <p class="mb-4">
+        From our plots, we were able to find out that there are species and regions that emerges in terms of economic value and production volume. Milkfish leads the charts with the highest mean economic value while seaweed dominates total production volume, which sparks contrast on what is valued and produced more in the market. On the other hand, Central Luzon actually leads as the economic powerhouse in the Philippines.
+    </p>
+    <h3>Multivariate Analysis</h3>
+    <p class="mb-4">
+        Finally, we analyzed groups of features in order to identify trends from each species and region.
+    </p>
+    <p class="mb-4">
+
+    </p>
+    <p class="mb-4">
         <a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" href="{base}/exploratory-data-analysis">Click here to see the process.</a>
     </p>
     <h2 class="mb-4">Hypothesis Testing</h2>

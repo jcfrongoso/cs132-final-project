@@ -75,7 +75,7 @@
     
         <h4 class="mb-2">Selection of Statistical Test</h4>
         <p class="mb-2">The first research question deals with two quantitative values: volume and value. Since we are testing if there is no positive correlation between the two features and not just any relation, a one-tailed Pearson correlation test is the appropriate statistical method for the following reasons:</p>
-        <ol class="list-decimal list-outside pl-4">
+        <ol class="list-decimal list-outside ml-10">
             <li>Both variables are continuous and measured on an interval/ratio scale</li>
             <li>We are investigating a linear relationship between the variables</li>
             <li>The hypothesis is directional (specifically testing for a positive correlation)</li>
@@ -103,7 +103,7 @@
         <p class="mb-2">
             This statistical result have economic implications. The positive correlation between production volume and economic value suggests that, in general, increasing aquaculture production leads to higher economic returns. However, the cluster analysis reveals a variation where:
         </p>
-        <ul class="list-outside list-disc pl-4 mb-2">
+        <ul class="list-outside list-disc ml-10 mb-2">
             <li>
                 <strong>Cluster 0</strong>: A strong positive relationship exists (y = 7.905x + 56,991.36), suggesting efficient market conditions where increasing production significantly boosts economic value.
             </li>
@@ -204,12 +204,12 @@
             </li>
         </ul>
         <img alt="Placeholder" class="w-xl my-4 mx-auto" src='{res4_3}' />
-        <h4 class="mb-2">
+        <h4 class="mb-4">
             Statistical Analysis Results
         </h4>
-        <p>Given that the trend is <code>no trend</code>, this means that there's no significant trend, thus we fail to reject `Ho`. This tells us about the uncertainty of the possible volume of aquaculture that we'll have for the following years. This uncertainty can cause several implications such as:</p>
-            
-       
+        <p class="mb-4">
+            Given that the trend is <code>no trend</code>, this means that there's no significant trend, thus we fail to reject `Ho`. This tells us about the uncertainty of the possible volume of aquaculture that we'll have for the following years. This uncertainty can cause several implications such as:
+        </p>
         <ul class="list-outside list-disc ml-10 mb-4">
             <li>Difficulty in long-term planning for supply chain management, including storage, distribution, and market pricing.</li>
             <li>Challenges in policy-making for the aquaculture sector, as the absence of a clear trend makes it harder to design effective interventions or subsidies.</li>

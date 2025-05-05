@@ -2,7 +2,7 @@
     import bg from "$lib/images/hero_section.jpg";
     import { base } from '$app/paths';
 </script>
-<div class="max-w-5xl mx-auto h-screen text-white z-10">
+<div class="mx-auto h-screen text-white z-10">
     <div class="absolute inset-0 ">
         <img class="h-screen" src="{base}/images/hero_section.jpg" alt="Hero Section Image"/>
         <div class="absolute inset-0 bg-black opacity-50"></div>

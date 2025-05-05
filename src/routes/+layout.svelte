@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	import '../app.css';
 	import './index.css';
 	import Header from './Header.svelte';
@@ -17,6 +19,6 @@
 
 <Header />
 <main class="container mx-auto">
-	{@render children()}
+	{@render children?.()}
 </main>
 <Footer />

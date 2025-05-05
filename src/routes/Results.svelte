@@ -2,17 +2,17 @@
     import { base } from '$app/paths';
 
     // Place images here
-    import rq1_1 from '$lib/images/plots/4-1 Relationship between Production Volume and Economic Value.png';
-    import rq1_2 from '$lib/images/plots/4-1 KMeans Clustering.png';
-    import rq1_3 from '$lib/images/plots/4-1 Kmeans with regression lines.png';
-    import rq2_1 from '$lib/images/plots/4-2 Production Volume by Region.png';
-    import rq2_2 from '$lib/images/plots/4-2 Production Volume Distribution by Region.png';
-    import rq3_1 from '$lib/images/plots/4-3 Production Volume Over The Years.png';
-    import rq3_2 from '$lib/images/plots/4-3 Production Volume Over the Years by Region.png';
+    import rq1_1 from '$lib/images/plots/4-1_Relationship_between_Production_Volume_and_Economic_Value.png';
+    import rq1_2 from '$lib/images/plots/4-1_KMeans_Clustering.png';
+    import rq1_3 from '$lib/images/plots/4-1_Kmeans_with_regression_lines.png';
+    import rq2_1 from '$lib/images/plots/4-2_Production_Volume_by_Region.png';
+    import rq2_2 from '$lib/images/plots/4-2_Production_Volume_Distribution_by_Region.png';
+    import rq3_1 from '$lib/images/plots/4-3_Production_Volume_Over_The_Years.png';
+    import rq3_2 from '$lib/images/plots/4-3_Production_Volume_Over_the_Years_by_Region.png';
     import res4_1 from '$lib/images/results/4-1.png';
     import res4_2 from '$lib/images/results/4-2.png';
     import res4_3 from '$lib/images/results/4-3.png';
-    import nutshell_plot from '$lib/images/plots/5 Nutshell plot.png';
+    import nutshell_plot from '$lib/images/plots/5_Nutshell_plot.png';
 </script>
 
 <div class="max-w-5xl mx-auto">

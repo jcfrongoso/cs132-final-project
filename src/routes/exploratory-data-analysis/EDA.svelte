@@ -3,45 +3,45 @@
 
     // Place images here
     // Univariate images.
-    import uni_volume_boxplot from '$lib/images/plots/3-1-3 Boxplot of Production Volume.png';
-    import uni_volume_boxplot_no_outlier from '$lib/images/plots/3-1-3 Boxplot of Production Volume - No Outliers.png';
-    import uni_volume_histogram from '$lib/images/plots/3-1-3 Histogram of Production Volume.png';
-    import uni_value_boxplot from '$lib/images/plots/3-1-4 Boxplot of Economic Value.png';
-    import uni_value_boxplot_no_outlier from '$lib/images/plots/3-1-4 Boxplot of Economic Value - No Outlier.png';
-    import uni_value_distribution from '$lib/images/plots/3-1-4 Distribution of Economic Value.png';
+    import uni_volume_boxplot from '$lib/images/plots/3-1-3_Boxplot_of_Production_Volume.png';
+    import uni_volume_boxplot_no_outlier from '$lib/images/plots/3-1-3_Boxplot_of_Production_Volume_-_No_Outliers.png';
+    import uni_volume_histogram from '$lib/images/plots/3-1-3_Histogram_of_Production_Volume.png';
+    import uni_value_boxplot from '$lib/images/plots/3-1-4_Boxplot_of_Economic_Value.png';
+    import uni_value_boxplot_no_outlier from '$lib/images/plots/3-1-4_Boxplot_of_Economic_Value_-_No_Outlier.png';
+    import uni_value_distribution from '$lib/images/plots/3-1-4_Distribution_of_Economic_Value.png';
 
     // Bivariate images.
-    import bi_species_value_mean from '$lib/images/plots/3-2-1 Mean Economic Value of each Species.png';
-    import bi_species_value_total from '$lib/images/plots/3-2-1 Total Economic Value of each Species.png';
+    import bi_species_value_mean from '$lib/images/plots/3-2-1_Mean_Economic_Value_of_each_Species.png';
+    import bi_species_value_total from '$lib/images/plots/3-2-1_Total_Economic_Value_of_each_Species.png';
 
-    import bi_species_volume_total from '$lib/images/plots/3-2-2 Total Production Volume of each Species.png';
+    import bi_species_volume_total from '$lib/images/plots/3-2-2_Total_Production_Volume_of_each_Species.png';
     
-    import bi_geolocation_value_mean from "$lib/images/plots/3-2-3 Mean Economic Value for each Region.png";
-    import bi_geolocation_value_total from "$lib/images/plots/3-2-3 Total Economic Value for each Region.png";
-    import bi_geolocation_value_3 from "$lib/images/plots/3-2-3 Total Production Volume of each Species.png";
+    import bi_geolocation_value_mean from "$lib/images/plots/3-2-3_Mean_Economic_Value_for_each_Region.png";
+    import bi_geolocation_value_total from "$lib/images/plots/3-2-3_Total_Economic_Value_for_each_Region.png";
+    import bi_geolocation_value_3 from "$lib/images/plots/3-2-3_Total_Production_Volume_of_each_Species.png";
 
-    import bi_geolocation_volume from '$lib/images/plots/3-2-4 Total Production Volume per Region.png';
+    import bi_geolocation_volume from '$lib/images/plots/3-2-4_Total_Production_Volume_per_Region.png';
 
-    import bi_value_yearquarter_1 from "$lib/images/plots/3-2-5 Economic Value from Q1 of 2020 to Q4 of 2024.png";
-    import bi_value_yearquarter_2 from "$lib/images/plots/3-2-5 Economic Value from the Q1 of 2020 to Q4 of 2024.png";
-    import bi_value_yearquarter_3 from "$lib/images/plots/3-2-5 Production Volume from Q1 of 2020 to Q4 of 2024.png";
+    import bi_value_yearquarter_1 from "$lib/images/plots/3-2-5_Economic_Value_from_Q1_of_2020_to_Q4_of_2024.png";
+    import bi_value_yearquarter_2 from "$lib/images/plots/3-2-5_Economic_Value_from_the_Q1_of_2020_to_Q4_of_2024.png";
+    import bi_value_yearquarter_3 from "$lib/images/plots/3-2-5_Production_Volume_from_Q1_of_2020_to_Q4_of_2024.png";
 
-    import bi_volume_yearquarter from "$lib/images/plots/3-2-6 Production Volume from Q1 of 2020 to Q4 of 2024.png";
+    import bi_volume_yearquarter from "$lib/images/plots/3-2-6_Production_Volume_from_Q1_of_2020_to_Q4_of_2024.png";
 
-    import bi_value_volume from "$lib/images/plots/3-2-7 Economic vs. Production Value of Aquaculture Systems in the Philippines.png";
+    import bi_value_volume from "$lib/images/plots/3-2-7_Economic_vs._Production_Value_of_Aquaculture_Systems_in_the_Philippines.png";
 
     // Mutlivariate images.
-    import multi_value_species_dist from "$lib/images/plots/3-3-1 Economic Value Distribution for each Species.png";
-    import multi_value_species_trend from "$lib/images/plots/3-3-1 Economic Value Trend for each Species.png";
+    import multi_value_species_dist from "$lib/images/plots/3-3-1_Economic_Value_Distribution_for_each_Species.png";
+    import multi_value_species_trend from "$lib/images/plots/3-3-1_Economic_Value_Trend_for_each_Species.png";
 
-    import multi_value_region_dist from "$lib/images/plots/3-3-2 Economic Value Distribution for each Region.png";
-    import multi_value_region_trend from "$lib/images/plots/3-3-2 Economic Value Trend for each Region.png";
+    import multi_value_region_dist from "$lib/images/plots/3-3-2_Economic_Value_Distribution_for_each_Region.png";
+    import multi_value_region_trend from "$lib/images/plots/3-3-2_Economic_Value_Trend_for_each_Region.png";
 
-    import multi_volume_species_dist from "$lib/images/plots/3-3-3 Production Volume Distribution for each Species.png";
-    import multi_volume_species_trend from "$lib/images/plots/3-3-3 Production Volume Trend for each Species.png";
+    import multi_volume_species_dist from "$lib/images/plots/3-3-3_Production_Volume_Distribution_for_each_Species.png";
+    import multi_volume_species_trend from "$lib/images/plots/3-3-3_Production_Volume_Trend_for_each_Species.png";
 
-    import multi_volume_region_dist from "$lib/images/plots/3-3-4 Production Volume Distribution for each Region.png";
-    import multi_volume_region_trend from "$lib/images/plots/3-3-4 Production Volume Trend for each Region.png";
+    import multi_volume_region_dist from "$lib/images/plots/3-3-4_Production_Volume_Distribution_for_each_Region.png";
+    import multi_volume_region_trend from "$lib/images/plots/3-3-4_Production_Volume_Trend_for_each_Region.png";
 </script>
 
 <div class="max-w-5xl mx-auto">

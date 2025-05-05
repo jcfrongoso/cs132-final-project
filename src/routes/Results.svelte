@@ -80,7 +80,7 @@
             <li>We are investigating a linear relationship between the variables</li>
             <li>The hypothesis is directional (specifically testing for a positive correlation)</li>
         </ol>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/results/4-1.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/results/4-1.png" />
         <h4 class="mb-2">Statistical Analysis Results</h4>
         <p class="mb-2">
             The Pearson correlation coefficient (r) calculated between production volume and economic value is 0.4275, indicating a moderate positive linear relationship between the two variables. According to established statistical guidelines, correlation coefficients between 0.3 and 0.5 typically represent moderate positive correlations.
@@ -92,11 +92,11 @@
         <p class="mb-2">
             To visually support this claim, we can utilize our plot from 3.2.7 but now we add a regression line.
         </p>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/plots/4-1_Relationship_between_Production_Volume_and_Economic_Value.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/plots/4-1_Relationship_between_Production_Volume_and_Economic_Value.png" />
         <p class="mb-2">The scatter plot reveals an interesting pattern that might not be fully captured by a single correlation coefficient. Upon visual inspection, there appear to be two distinct clusters within the data, suggesting a potentially more complex relationship. With this, we use K-means clustering to identify the two visually identifiable clustering.</p>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/plots/4-1_KMeans_Clustering.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/plots/4-1_KMeans_Clustering.png" />
         <p class="mb-2">The plot above is quite interesting as compared to what we could have imagined (most would easily halve the original scatter plot into two by creating a dividing line that will cluster the original scatter plot). But does these two plots inherit the same regression line from the original plot?</p>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/plots/4-1_Kmeans_with_regression_lines.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/plots/4-1_Kmeans_with_regression_lines.png" />
         <p class="mb-2">
             The first clustering has a high positive coefficient while the second clustering tends to have a lower negative coefficient. Given these two plots, it is hard to conclude what characteristics can be discerned from approximately 66% of production volume values. But after some point, economic value tends to die down.
         </p>
@@ -138,7 +138,7 @@
         <p class="mb-2">
             For this research question, we are dealing with a categorical variable as a predictor (region) and a quantitative outcome variable (production volume). Based on this, the appropriate statistical test for comparing more than two independent groups is the Kruskal-Wallis H test, a non-parametric alternative to one-way ANOVA when normality cannot be assumed.
         </p>
-        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="/images/results/4-2.png" />
+        <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/results/4-2.png" />
         <h4 class="mb-2">
             Statistical Analysis Results
         </h4>

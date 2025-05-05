@@ -70,20 +70,20 @@
     <h3 class="mb-2">Volume</h3>
     <p class="mb-4">Moving on, we proceed to the <code>Volume</code> feature. Since this is numerical variable, the <code>describe()</code> method provides a different set of attributes.</p>
     <p class="mb-4">From here, we can see that there is a very large gap between the 75% quantile and the max value. This is further supported by the very large standard deviation which means that our data "could be" clumped between 1.24 and 278 and might go as high as 328,205. To prove this point, we provide a boxplot below.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-1-3_Boxplot_of_Production_Volume.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-1-3_Boxplot_of_Production_Volume.png" />
     <p class="mb-4">This may not seem like a "very intuitive" box plot but it provides us a view that there's quite a substantial amount of <code>Volume</code> data that is "extraneous". It is quite interesting to identify which species or timeframe contribute to this occurrence. Since the graph above is quite scuffed, we provide a boxplot below that contains no "outliers".</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-1-3_Boxplot_of_Production_Volume_-_No_Outliers.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-1-3_Boxplot_of_Production_Volume_-_No_Outliers.png" />
     <p class="mb-4">We can't fully view how they are distributed so below is a histogram showing the distribution of aquaculture volume.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-1-3_Histogram_of_Production_Volume.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-1-3_Histogram_of_Production_Volume.png" />
     <p class="mb-4">As we can see from the histogram above, the graph is indeed positively skewed which means that there are indeed instances where the <code>Volume</code> value is really high.</p>
     
     <h3 class="mb-2">Value</h3>
     <p class="mb-4">The same set of visualizations can be used for the <code>Value</code> feature since we are dealing with a quantitative value.</p>
     <p class="mb-4">Compared to the <code>Volume</code> feature, the <code>Value</code> feature contains quantitatively higher degree in values but as we can see the difference between the 75% quantile and the maximum value is still large. This can be further proven by the boxplot below.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-1-4_Boxplot_of_Economic_Value.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-1-4_Boxplot_of_Economic_Value.png" />
     <p class="mb-4">There are still a considerable amount of "outliers" in our <code>Value</code> column and a similar question arises: what causes this occurrence? Hopefully, we get an answer to this question later. Again, we repeat the boxplot by removing the outliers and by also providing a histogram to determine the distribution of the <code>Value</code> column.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-1-4_Boxplot_of_Economic_Value_-_No_Outlier.png" />
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-1-4_Distribution_of_Economic_Value.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-1-4_Boxplot_of_Economic_Value_-_No_Outlier.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-1-4_Distribution_of_Economic_Value.png" />
     <p class="mb-4">Similar to the <code>Volume</code> column, the histogram for the <code>Value</code> column is also positively skewed with the values going to the right decreasing to around 0 or 1 count (eyeballed values). Since we cannot infer something new from these plots, we proceed to bivariate analysis to further analyze pairings of features and hopefully get to answer the questions that we found earlier.</p>
     
     <!-- Bivariate Analysis -->
@@ -97,11 +97,11 @@
     <p class="mb-4">
         We first begin with the <code>Species</code>-<code>Value</code> pairing. Given the nature of these two features, we proceed to use a horizontal bar chart to identify the total <code>Value</code> of each specie.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-1_Total_Economic_Value_of_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-1_Total_Economic_Value_of_each_Species.png" />
     <p class="mb-4">
         We can see that the Milkfish specie contributes to the highest value compared to the remainder. We can infer from here that the Milkfish specie contributes to the extraneous values from our <code>Value</code> data earlier. Note that we used <code>sum</code> for our grouping in this plot. Let's check if <code>mean</code> would have a different plot.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-1_Mean_Economic_Value_of_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-1_Mean_Economic_Value_of_each_Species.png" />
     <p class="mb-4">
         If we clearly think about it, it doesn't actually contribute to anything new since the values were simply "normalized" in some way. Since there's nothing else to see here, we proceed to the next pairing.
     </p>
@@ -109,7 +109,7 @@
 
     <h3 class="mb-2">Species - Volume</h3>
     <p class="mb-4">We proceed with the <code>Species</code> - <code>Volume</code> pairing. We can also use the same set of plots above since <code>Volume</code> is also a quantitative variable.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-2_Total_Production_Volume_of_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-2_Total_Production_Volume_of_each_Species.png" />
     <p class="mb-4">
         Wow, this is something. Milkfish contributes to the highest value but seaweeds contribute to the highest volume. Why could this be?
     </p>
@@ -124,8 +124,8 @@
     <p class="mb-4">
         Next up, we have <code>Geolocation</code> vs <code>Value</code>. Here, we identify if there's a difference between the value of aquaculture per region.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-3_Mean_Economic_Value_for_each_Region.png" />
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-3_Total_Economic_Value_for_each_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-3_Mean_Economic_Value_for_each_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-3_Total_Economic_Value_for_each_Region.png" />
     <!-- <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{bi_geolocation_value_3}" /> -->
     <p class="mb-4">
         From this plot, we can see that Central Luzon offers a large total and average value compared to other regions. Why is this so? Why do they value their aquaculture products so much?
@@ -140,7 +140,7 @@
     <p class="mb-4">
         Next up, we have the <code>Geolocation</code> - <code>Volume</code> pairing. Similar to the plots above, we can do the same set of visuals for this pairing.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-4_Total_Production_Volume_per_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-4_Total_Production_Volume_per_Region.png" />
     <p class="mb-4">
         Again, the total volume for BARMM is quite large in number compared to the following regions. Location-wise, BARMM is at the southwestern portion of the Philippines and is comprised of several islands surrounded by a significantly large body of water. This might be a reason as to why there's a "significant" discrepancy in <code>Volume</code> compared to other regions especially to those in the Visayas regions since they are also surrounded significantly by bodies of water.
     </p>
@@ -149,7 +149,7 @@
     <p class="mb-4">
         This next pairing may not seem like a pair but the <code>Year</code> and <code>Quarter</code> features can be actually combined to provide us a time series analysis of <code>Value</code> and <code>Volume</code> (next section). For this part, we will be plotting a line chart for the <code>Value</code> variable.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-5_Economic_Value_from_Q1_of_2020_to_Q4_of_2024.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-5_Economic_Value_from_Q1_of_2020_to_Q4_of_2024.png" />
     <p class="mb-4">
         Based on this line chart, we cannot actually discern any particular trend without performing a linear regression, which we can do but for now we will only provide a visualization.
     </p>
@@ -158,7 +158,7 @@
     <p class="mb-4">
         Second to the last is the <code>Volume</code> time series where we can plot a line chart to determine if a particular trend is occurring.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-6_Production_Volume_from_Q1_of_2020_to_Q4_of_2024.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-6_Production_Volume_from_Q1_of_2020_to_Q4_of_2024.png" />
     <p class="mb-4">
         Similar to our findings earlier, there's also no discernable trend that can be visually found in this graph.
     </p>
@@ -168,7 +168,7 @@
     <p class="mb-4">
         Finally, we have the <code>Value</code> - <code>Volume</code> pair. Both values are quantitative values so we utilized a scatter plot.
     </p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-2-7_Economic_vs._Production_Value_of_Aquaculture_Systems_in_the_Philippines.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-2-7_Economic_vs._Production_Value_of_Aquaculture_Systems_in_the_Philippines.png" />
     <p class="mb-4">
         This is quite an interesting plot since we can say through visual eyeballing that there are two probable clusters from this graph but we cannot yet conclude if this is so but for now we can state that there are two probable clusters pertaining to different line regressions.
     </p>
@@ -181,26 +181,26 @@
 
     <h3 class="mb-2">Value - Year/Quarter per Species</h3>
     <p class="mb-4">The first set of group includes the value of each specie as a time series. We provide below a heatmap showing the changes in value for each specie as time goes on.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-1_Economic_Value_Distribution_for_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-1_Economic_Value_Distribution_for_each_Species.png" />
     <p class="mb-4">Aside from the heatmap, we can also create multiple boxplots to further determine the gap on the distribution of each specie.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-1_Economic_Value_Trend_for_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-1_Economic_Value_Trend_for_each_Species.png" />
     <p class="mb-4">As we can see from the heatmap above, almost half of the available species has very low value compared to Milkfish, Tilapia, and Tiger Prawn (visually judged). Some of these species include mussel, mudfish, oyster, prawns, catfish, and carp which I think are luxury species when based on the choices of the common people, thus contributing to little value. As for the boxplots, we can see that the distribution for Milkfish do have a larger gap as compared to the other species which have lower quantitative value.</p>
     
     <h3 class="mb-2">Value - Year/Quarter per Region</h3>
     <p class="mb-4">Next up is the time series changes in value per region. We again utilize the same plot function above.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-2_Economic_Value_Trend_for_each_Region.png" />
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-2_Economic_Value_Distribution_for_each_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-2_Economic_Value_Trend_for_each_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-2_Economic_Value_Distribution_for_each_Region.png" />
     <p class="mb-4">Similar to our findings earlier, Central Luzon has high aquaculture value. Through visual analysis, we can see that Central Luzon leads on all the Year-Quarter combinations in terms of value. As for the following region, there's no clear contender as to who to watch for.</p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Species</h3>
     <p class="mb-4">The next few plots below are the `Volume` feature equivalent of the `Value` plots above.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-3_Production_Volume_Distribution_for_each_Species.png" />
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-3_Production_Volume_Trend_for_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-3_Production_Volume_Distribution_for_each_Species.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-3_Production_Volume_Trend_for_each_Species.png" />
     <p class="mb-4">Seaweed clearly has the highest volume output among all aquaculture species, likely because it is relatively easy to cultivate, requires minimal maintenance, and is well-suited for small-scale production. Its accessibility allows even low-capital communities to engage in farming, contributing to its widespread adoption and consistently high output.</p>
     
     <h3 class="mb-2">Volume - Year/Quarter per Region</h3>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-4_Production_Volume_Distribution_for_each_Region.png" />
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="/images/plots/3-3-4_Production_Volume_Trend_for_each_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-4_Production_Volume_Distribution_for_each_Region.png" />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{base}/images/plots/3-3-4_Production_Volume_Trend_for_each_Region.png" />
     <p class="mb-4">BARMM consistently leads in aquaculture production volume, largely due to extensive seaweed farming, as shown by its high median and wide distribution in the boxplot and sustained dominance in the heatmap. 
         CAR ranks second, with stable yet moderate output likely driven by freshwater and inland aquaculture systems. 
         In contrast, most other regions exhibit lower and less variable production volumes, reflecting smaller-scale or less intensive aquaculture operations. 

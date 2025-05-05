@@ -69,7 +69,7 @@
     <h3 class="mb-2">Volume</h3>
     <p class="mb-4">Moving on, we proceed to the <code>Volume</code> feature. Since this is numerical variable, the <code>describe()</code> method provides a different set of attributes.</p>
     <p class="mb-4">From here, we can see that there is a very large gap between the 75% quantile and the max value. This is further supported by the very large standard deviation which means that our data "could be" clumped between 1.24 and 278 and might go as high as 328,205. To prove this point, we provide a boxplot below.</p>
-    <img alt="Placeholder" class="h-96 my-8 mx-auto" src={uni_volume_boxplot} />
+    <img alt="Placeholder" class="h-96 my-8 mx-auto" src="{uni_volume_boxplot}" />
     <p class="mb-4">This may not seem like a "very intuitive" box plot but it provides us a view that there's quite a substantial amount of <code>Volume</code> data that is "extraneous". It is quite interesting to identify which species or timeframe contribute to this occurrence. Since the graph above is quite scuffed, we provide a boxplot below that contains no "outliers".</p>
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={uni_volume_boxplot_no_outlier} />
     <p class="mb-4">We can't fully view how they are distributed so below is a histogram showing the distribution of aquaculture volume.</p>

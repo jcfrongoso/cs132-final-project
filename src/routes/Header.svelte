@@ -26,7 +26,7 @@
     }
 </script>
 
-<header class="sticky top-0 bg-blue-300">
+<header class="z-20 sticky top-0 bg-blue-300">
     <!-- <nav>
         <ul class="flex justify-center">
             {#each nav_items as item}

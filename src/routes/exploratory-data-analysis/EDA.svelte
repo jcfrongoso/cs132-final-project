@@ -127,7 +127,12 @@
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={bi_geolocation_value_total} />
     <!-- <img alt="Placeholder" class="h-96 my-8 mx-auto" src={bi_geolocation_value_3} /> -->
     <p class="mb-4">
-        <!-- TODO: Still have to wait. -->
+        From this plot, we can see that Central Luzon offers a large total and average value compared to other regions. Why is this so? Why do they value their aquaculture products so much?
+        Manlosa et al. (<a href="https://link.springer.com/article/10.1007/s10113-021-01853-4" style="color: blue;" target="_blank">2021</a>) highlight how saltwater intrusion and environmental changes have driven the conversion of rice paddies into fish farms in Central Luzon, especially in low-lying areas like Pampanga, Bulacan, and Bataan. As a result, these provinces—along with inland areas such as Nueva Ecija and Tarlac—now play a major role in aquaculture production, cultivating species like bangus, sugpo, and tilapia.
+        Based on the data we gathered, the top three species produced in BARMM are seaweed, P. vannamei (whiteleg shrimp), and oyster. 
+        In contrast, the leading species in Central Luzon are tilapia, milkfish, and white shrimp. As shown in the previous sections, seaweed and P. vannamei rank highest in terms of production volume. 
+        However, it was also shown that their mean economic value is relatively low compared to that of milkfish and tilapia. 
+        This disparity helps explain why Central Luzon, despite having lower production volumes, achieves a higher overall economic value than BARMM.
     </p>
 
     <h3 class="mb-2">Geolocation - Volume</h3>
@@ -136,7 +141,7 @@
     </p>
     <img alt="Placeholder" class="h-96 my-8 mx-auto" src={bi_geolocation_volume} />
     <p class="mb-4">
-        Again, the total volume for BARMM is quite large in number compared to the following regions. Locatin-wise, BARMM is at the southwestern portion of the Philippines and is comprised of several islands surrounded by a significantly large body of water. This might be a reason as to why there's a "significant" discrepancy in <code>Volume</code> compared to other regions especially to those in the Visayas regions since they are also surrounded significantly by bodies of water.
+        Again, the total volume for BARMM is quite large in number compared to the following regions. Location-wise, BARMM is at the southwestern portion of the Philippines and is comprised of several islands surrounded by a significantly large body of water. This might be a reason as to why there's a "significant" discrepancy in <code>Volume</code> compared to other regions especially to those in the Visayas regions since they are also surrounded significantly by bodies of water.
     </p>
 
     <h3 class="mb-2">Value - Year/Quarter</h3>

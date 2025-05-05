@@ -51,22 +51,29 @@
     <p class="mb-4"></p>
     
     <h3 class="mb-2">Species</h3>
-    <p class="mb-4"></p>
-
+    <p class="mb-4">For `Species`, the only analysis that we can do is to identify what set of species and the number of species included in the dataset.</p>
+    <p class="mb-4">Based on the dataset, there's currently 19 different species included in our dataset (excluding 'All Species'). Since we want to exclude 'All Species', we proceed to fix our dataset.</p>
     <h3 class="mb-2">Geolocation</h3>
-    <p class="mb-4"></p>
+    <p class="mb-4">As for the `Geolocation`, we have all 17 regions in the Philippines since they were all available from the data source.</p>
 
     <h3 class="mb-2">Volume</h3>
+    <p class="mb-4">Moving on, we proceed to the `Volume` feature. Since this is numerical variable, the `describe()` method provides a different set of attributes.</p>
+    <p class="mb-4">From here, we can see that there is a very large gap between the 75% quantile and the max value. This is further supported by the very large standard deviation which means that our data "could be" clumped between 1.24 and 278 and might go as high as 328,205. To prove this point, we provide a boxplot below.</p>
     <img alt="Placeholder" class="h-96" src={uni_volume_boxplot} />
+    <p class="mb-4">This may not seem like a "very intuitive" box plot but it provides us a view that there's quite a substantial amount of `Volume` data that is "extraneous". It is quite interesting to identify which species or timeframe contribute to this occurrence. Since the graph above is quite scuffed, we provide a boxplot below that contains no "outliers".</p>
     <img alt="Placeholder" class="h-96" src={uni_volume_boxplot_no_outlier} />
+    <p class="mb-4">We can't fully view how they are distributed so below is a histogram showing the distribution of aquaculture volume.</p>
     <img alt="Placeholder" class="h-96" src={uni_volume_histogram} />
-    <p class="mb-4"></p>
+    <p class="mb-4">As we can see from the histogram above, the graph is indeed positively skewed which means that there are indeed instances where the `Volume` value is really high.</p>
     
     <h3 class="mb-2">Value</h3>
+    <p class="mb-4">The same set of visualizations can be used for the `Value` feature since we are dealing with a quantitative value.</p>
+    <p class="mb-4">Compared to the `Volume` feature, the `Value` feature contains quantitatively higher degree in values but as we can see the difference between the 75% quantile and the maximum value is still large. This can be further proven by the boxplot below.</p>
     <img alt="Placeholder" class="h-96" src={uni_value_boxplot} />
+    <p class="mb-4">There are still a considerable amount of "outliers" in our `Value` column and a similar question arises: what causes this occurrence? Hopefully, we get an answer to this question later. Again, we repeat the boxplot by removing the outliers and by also providing a histogram to determine the distribution of the `Value` column.</p>
     <img alt="Placeholder" class="h-96" src={uni_value_boxplot_no_outlier} />
     <img alt="Placeholder" class="h-96" src={uni_value_distribution} />
-    <p class="mb-4"></p>
+    <p class="mb-4">Similar to the `Volume` column, the histogram for the `Value` column is also positively skewed with the values going to the right decreasing to around 0 or 1 count (eyeballed values). Since we cannot infer something new from these plots, we proceed to bivariate analysis to further analyze pairings of features and hopefully get to answer the questions that we found earlier.</p>
     
     <!-- Bivariate Analysis -->
     

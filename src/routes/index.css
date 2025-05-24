@@ -11,7 +11,7 @@
 
 @layer base {
     html {
-        @apply bg-linear-to-b from-white to-blue-400;
+        @apply bg-linear-to-b from-blue-300 via-green-300 to-indigo-300;
     }
     h1, h2 {
         @apply font-bold font-merriweather;

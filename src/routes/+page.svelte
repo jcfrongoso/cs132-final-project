@@ -10,6 +10,7 @@
     import Nutshell from './Nutshell.svelte';
     import Team from './Team.svelte';
     import MachineLearning from './MachineLearning.svelte';
+    import Action from './Action.svelte';
 </script>
 
 <!-- Introduction to the entire thing -->
@@ -20,7 +21,7 @@
 <!-- <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300"> -->
 
 <!-- Overview -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Overview">
+<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Rationale">
     <Overview />
 </section>
 
@@ -70,6 +71,13 @@
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 {/if}
+
+<!-- Action -->
+<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Action">
+    <Action />
+</section>
+
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 
 <!-- Team -->
 <section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Team">

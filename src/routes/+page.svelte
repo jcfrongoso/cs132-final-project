@@ -60,7 +60,7 @@
 </section>
 
 <!-- Results -->
-<section class="my-8 mx-8 sm:mx-auto" id="Nutshell">
+<section class="my-8 mx-8 sm:mx-auto" id="Forecast">
     <MachineLearning />
 </section>
 

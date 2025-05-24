@@ -18,68 +18,68 @@
     <Hero />
 </section>
 
-<!-- <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10> -->
+<!--  -->
 
 <!-- Overview -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Rationale">
+<section class="scroll-mt-10 mt-20 mb-20 mx-8 sm:mx-auto" id="Rationale">
     <Overview />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 <!-- Problem, Solution, Objectives & Hypothesis -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Problem">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Problem">
     <Problem />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 <!-- Data History and Collection -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Data">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Data">
     <Data />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 {#if render_results}
 <!-- Data Preprocessing -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Preprocessing">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Preprocessing">
     <Preprocessing />
     <!-- <Preprocessing /> -->
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Analysis">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Analysis">
     <Analysis />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Nutshell">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Nutshell">
     <Nutshell />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Forecast">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Forecast">
     <MachineLearning />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 {/if}
 
 <!-- Conclusion -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Conclusion">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Conclusion">
     <Conclusion />
 </section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10>
+
 
 <!-- Team -->
-<section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Team">
+<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Team">
     <Team />
 </section>

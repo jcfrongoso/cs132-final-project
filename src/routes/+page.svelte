@@ -28,14 +28,14 @@
 
 
 <!-- Problem, Solution, Objectives & Hypothesis -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Problem">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Problem">
     <Problem />
 </section>
 
 
 
 <!-- Data History and Collection -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Data">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Data">
     <Data />
 </section>
 
@@ -43,7 +43,7 @@
 
 {#if render_results}
 <!-- Data Preprocessing -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Preprocessing">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Preprocessing">
     <Preprocessing />
     <!-- <Preprocessing /> -->
 </section>
@@ -51,21 +51,21 @@
 
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Analysis">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Analysis">
     <Analysis />
 </section>
 
 
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Nutshell">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Nutshell">
     <Nutshell />
 </section>
 
 
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Forecast">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Forecast">
     <MachineLearning />
 </section>
 
@@ -73,13 +73,13 @@
 {/if}
 
 <!-- Conclusion -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Conclusion">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Conclusion">
     <Conclusion />
 </section>
 
 
 
 <!-- Team -->
-<section class="scroll-mt-10 my-40 mx-8 sm:mx-auto" id="Team">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Team">
     <Team />
 </section>

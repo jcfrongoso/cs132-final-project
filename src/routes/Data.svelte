@@ -35,13 +35,13 @@
                 <p class="text-blue-800 text-2xl font-merriweather">~6800 Samples</p>
             </div>
             <div class="border-2 border-blue-800 w-full px-4 py-2 rounded-2xl mb-2">
+                <p class="text-blue-800 text-2xl font-merriweather">~4 Years of Data</p>
+            </div>
+            <div class="border-2 border-blue-800 w-full px-4 py-2 rounded-2xl mb-2">
                 <p class="text-blue-800 text-2xl font-merriweather">17 Regions</p>
             </div>
             <div class="border-2 border-blue-800 w-full px-4 py-2 rounded-2xl mb-2">
                 <p class="text-blue-800 text-2xl font-merriweather">6 Columns/Features</p>
-            </div>
-            <div class="border-2 border-blue-800 w-full px-4 py-2 rounded-2xl mb-2">
-                <p class="text-blue-800 text-2xl font-merriweather">~4 Years of Data</p>
             </div>
          </div>
     </div>

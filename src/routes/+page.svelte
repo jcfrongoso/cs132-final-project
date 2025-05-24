@@ -54,10 +54,14 @@
     <Results />
 </section>
 
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
+
 <!-- Results -->
 <section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Nutshell">
     <Nutshell />
 </section>
+
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-300">
 
 <!-- Results -->
 <section class="scroll-mt-10 my-8 mx-8 sm:mx-auto" id="Forecast">

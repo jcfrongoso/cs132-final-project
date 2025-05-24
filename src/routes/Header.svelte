@@ -62,17 +62,17 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div onmouseover={()=>{ showNavbar(true) }} onfocus={()=>{ showNavbar(true) }} onmouseleave={()=>{ showNavbar(false) }} id="hoverArea" class="z-20 flex shrink-0 grow-0 justify-around h-screen w-[128px] fixed flex-col">
         
-        <div bind:this={hoverButton} class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-blue-100 text-blue-600 dark:bg-blue-500 dark:text-blue-100">
+        <div bind:this={hoverButton} class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-blue-100 text-blue-600 ">
             <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </div>
         
     </div>
-    <nav bind:this={navbars} onmouseover={()=>{ showNavbar(true) }} onfocus={()=>{ showNavbar(true) }} onmouseleave={()=>{ showNavbar(false) }} class="z-20 flex shrink-0 grow-0 justify-around gap-4 border-t border-gray-200 bg-white/50 p-2.5 shadow-lg backdrop-blur-lg dark:border-slate-600/60 dark:bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border hidden"
+    <nav bind:this={navbars} onmouseover={()=>{ showNavbar(true) }} onfocus={()=>{ showNavbar(true) }} onmouseleave={()=>{ showNavbar(false) }} class="z-20 flex shrink-0 grow-0 justify-around gap-4 border-t p-2.5 shadow-lg backdrop-blur-lg border-slate-600/60 bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border hidden"
     >
         {#each nav_items as item}
-        <a href="{base}/#{item}" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-blue-100 text-blue-600 dark:bg-blue-500 dark:text-blue-100"
+        <a href="{base}/#{item}" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-blue-100 text-blue-600 "
         >
             <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg">
                 {@html icons[item.toString()]}

@@ -17,11 +17,8 @@
 
 
 <div class="max-w-5xl mx-auto">
-    <h1 class="mb-4">Overview</h1>
-    <p class="mb-4">
-        Our project, "Aquaculture in the Philippines", utilizes data science techniques to analyze economic trends, assess regional variations, and evaluate the investment potential of the country's aquaculture industry. By examining the growth and distribution of various marine species across different regions, we aim to provide data-driven insights into the viability of further investment in Philippine aquaculture.
-    </p>
-    <h2 class="mb-2">Rationale</h2>
+    <!-- <h1 class="mb-4">Overview</h1> -->
+    <h1 class="mb-2">Rationale</h1>
     <p class="mb-4">
         There are three fisheries sectors in the Philippines: municipal fisheries, commercial fisheries, and aquaculture.
     </p>

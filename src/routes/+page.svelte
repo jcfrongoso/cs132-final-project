@@ -13,7 +13,7 @@
 </script>
 
 <!-- Introduction to the entire thing -->
-<section class="my-8 mx-8 sm:mx-auto" id="Hero">
+<section class="mx-8 sm:mx-auto" id="Hero">
     <Hero />
 </section>
 

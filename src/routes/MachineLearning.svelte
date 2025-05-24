@@ -3,6 +3,11 @@
 </script>
 <div class="max-w-5xl mx-auto">
     <h1 class="mb-4">Time Series Forecasting</h1>
+    <!--
+    [ ] - What can we do with our data? (forecasting intro + dataset explanations)
+    [ ] - How did we forecast? (model explanation)
+    [ ] - What did it look like? (app explanation)
+    [ ] - Is it perfect? (nope, dataset has limitations) -->
     <p class="mb-4">
         For the final part of our project, we are tasked to create apply a machine learning model from our dataset. Since our dataset is time series in nature, our group opted to use autoregressive integrated moving average (ARIMA) to forecast the next quarter.
     </p>

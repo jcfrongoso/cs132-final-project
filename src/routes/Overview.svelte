@@ -16,7 +16,7 @@
 </script>
 
 
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <!-- <h1 class="mb-4">Overview</h1> -->
     <h1 class="mb-2">Rationale</h1>
     <p class="mb-4">

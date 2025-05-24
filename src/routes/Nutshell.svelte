@@ -2,7 +2,7 @@
     import { base } from '$app/paths';
     import nutshell_plot from '$lib/images/plots/5_Nutshell_plot.png';
 </script>
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <h1 class="mb-4">What's our take? (Nutshell Plot)</h1>
     <p class="mb-4">
        With these things in mind, we get to see a bigger picture. Having resources is not enough for an economy to work without proper support. Even though a large portion of Visayas is surrounded by a large body of water, they still lack in terms of production volume. But is it the end-all? No, there are prospering regions that dare defy this case. Central Luzon is one of the leading regions in terms of production volume but in their case, they are not as geographically resourceful in terms of bodies of water. This might mean one thing. Other regions are not trying. 

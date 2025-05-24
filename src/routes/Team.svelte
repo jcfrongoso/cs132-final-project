@@ -19,7 +19,7 @@
 
 </script>
 
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <h1 class="mb-4">Team</h1>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto">
         {#each content as details}

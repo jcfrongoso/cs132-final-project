@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
@@ -9,7 +10,9 @@
 }
 
 @layer base {
-    
+    body {
+        @apply bg-gray-100;
+    }
     h1, h2 {
         @apply font-bold font-merriweather;
     }
@@ -17,7 +20,7 @@
         @apply font-semibold font-merriweather;
     }
     h1 {
-        @apply text-2xl sm:text-4xl;
+        @apply text-2xl sm:text-4xl text-blue-700;
     }
 
     h2 {

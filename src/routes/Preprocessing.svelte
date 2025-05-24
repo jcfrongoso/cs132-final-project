@@ -4,7 +4,7 @@
     let finalized_dataset = "https://docs.google.com/spreadsheets/d/1GGl72rv4w5Nj0xWuO4UrPLCey6OTtPAnVTV8sImYsqU/edit?usp=sharing";
     let colab_link = "https://colab.research.google.com/drive/1oohGaBcZXjV41udiQipQl1Lw0ZCKSvzl?usp=sharing";
 </script>
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <h1 class="mb-2">Data Preprocessing</h1>
     <p class="mb-4">
         For data preporcessing, four major steps were used on both dataset to arrive on the combined final dataset. Before proceeding to the four major steps, a preliminary check was done on both datasets to gain a brief understanding about the structure and format of both datasets.

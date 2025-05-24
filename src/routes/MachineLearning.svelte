@@ -1,7 +1,7 @@
 <script>
     import { base } from '$app/paths';
 </script>
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <h1 class="mb-4">Time Series Forecasting</h1>
     <p class="mb-4">
         For the final part of our project, we are tasked to create apply a machine learning model from our dataset. Since our dataset is time series in nature, our group opted to use autoregressive integrated moving average (ARIMA) to forecast the next quarter.

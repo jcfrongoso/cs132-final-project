@@ -4,7 +4,7 @@
     let aquaculture_volume_link = "https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/0072E4GVAP0.px/?rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t";
 </script>
 
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <h1 class="mb-4">Data & Methods</h1>
     <p class="mb-4">
         As of March 2025, our group have preprocessed the dataset necessary for the project. 

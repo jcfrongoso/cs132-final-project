@@ -44,7 +44,7 @@
     <p class="mb-4">
         A progressive web applicaiton is hosted in another site as seen in the link above. To generate a forecast, the user must pick a specific region and species respectively to generate a forecast plot of their input. All 17 regions of the Philippines are selectable as an option alongside 19 known agricultural species.
     </p>
-    <p>
+    <p class="mb-4">
         The applet outputs a forecast plot with a trendline with uncertainty bands, and observed points seen in the dataset.
     </p>
     <h2 class="mb-4">Limitations</h2>

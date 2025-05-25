@@ -10,6 +10,7 @@
     import Nutshell from './Nutshell.svelte';
     import Team from './Team.svelte';
     import MachineLearning from './MachineLearning.svelte';
+    import Forecasting from './Application.svelte';
     import Conclusion from './Conclusion.svelte';
 </script>
 
@@ -67,6 +68,10 @@
 <!-- Analysis -->
 <section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Forecast">
     <MachineLearning />
+</section>
+
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Model">
+    <Forecasting />
 </section>
 
 

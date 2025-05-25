@@ -12,6 +12,7 @@
     import MachineLearning from './MachineLearning.svelte';
     import Forecasting from './Application.svelte';
     import Conclusion from './Conclusion.svelte';
+    import Hypotesting from './Hypotesting.svelte';
 </script>
 
 <!-- Introduction to the entire thing -->
@@ -56,6 +57,11 @@
     <Analysis />
 </section>
 
+<!-- Hypothesis Testing -->
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Hypotesting">
+    <Hypotesting />
+</section>
+
 
 
 <!-- Analysis -->
@@ -66,11 +72,12 @@
 
 
 <!-- Analysis -->
-<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Forecast">
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="MachineLearning">
     <MachineLearning />
 </section>
 
-<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Model">
+
+<section class="scroll-mt-10 my-20 mx-8 sm:mx-auto" id="Forecast">
     <Forecasting />
 </section>
 

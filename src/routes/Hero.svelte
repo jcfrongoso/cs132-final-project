@@ -20,7 +20,7 @@
     </p>
     <div>
         <a href="{base}/#Rationale" class="bg-blue-400 text-gray-900 hover:bg-blue-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Get Started</a>
-        <a href="{base}/#Model" class="bg-blue-400 text-gray-900 hover:bg-blue-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Try Forecast Model</a>
+        <a href="{base}/#Forecast" class="bg-blue-400 text-gray-900 hover:bg-blue-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Try Forecast Model</a>
     </div>
         
     </div>

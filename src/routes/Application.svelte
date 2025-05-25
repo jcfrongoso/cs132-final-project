@@ -98,7 +98,7 @@
     </div>
 
     <!-- svelte-ignore a11y_missing_attribute -->
-    <img bind:this={imaging} class="mx-auto mb-8 w-2/3">
+    <img bind:this={imaging} class="mx-auto mb-8 w-2/3" src="{base}/images/plot_placeholder.png">
     
     
 

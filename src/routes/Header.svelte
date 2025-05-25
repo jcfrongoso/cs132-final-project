@@ -72,7 +72,7 @@
     <nav bind:this={navbars} onmouseover={()=>{ showNavbar(true) }} onfocus={()=>{ showNavbar(true) }} onmouseleave={()=>{ showNavbar(false) }} class="z-20 flex shrink-0 grow-0 justify-around gap-4 border-t p-2.5 shadow-lg backdrop-blur-lg border-slate-600/60 bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border hidden"
     >
         {#each nav_items as item}
-        <a href="{base}/#{item}" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-blue-600 text-blue-100 "
+        <a href="{base}/#{item}" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-blue-600 text-blue-100 hover:bg-blue-100 hover:text-blue-800 transition duration-150"
         >
             <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg">
                 {@html icons[item.toString()]}

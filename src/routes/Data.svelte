@@ -9,8 +9,8 @@
     <div class="grid grid-cols-[70%_30%]">
         <!-- Details -->
         <div class="pr-8">
-            <h1 class="mb-4">Data & Methods</h1>
-                <p class="mb-4">
+            <h1 class="mb-2">Data & Methods</h1>
+                <p class="mb-4 text-xs text-gray-600">
                     As of March 2025, our group have preprocessed the dataset necessary for the project. 
                 </p>
                 <h2 class="mb-2">Data Collection</h2>
@@ -26,9 +26,9 @@
         <!-- Pop-ups -->
          <div class="pt-5">
              <a target="_blank" rel="noreferrer" href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2E__FS/?tablelist=true&rxid=bdf9d8da-96f1-4100-ae09-18cb3eaeb313t">
-            <div class="bg-blue-100 border-2 border-blue-800 w-full px-4 py-2 rounded-2xl mb-2">
-                <p class="text-blue-800 text-2xl font-merriweather">View Dataset/s at:</p>
-                    <img alt="Placeholder" class="w-xl my-4 mx-auto" src="{base}/images/openstatnew.png" />
+            <div class="bg-blue-100 border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:border-black hover:text-blue-100 w-full px-4 py-2 rounded-2xl mb-2 transition delay-50 duration-150">
+                <p class="text-2xl font-merriweather">View Dataset/s at:</p>
+                    <img alt="Placeholder" class="w-xl my-4 mx-auto " src="{base}/images/openstatnew.png" />
                 </div>
             </a>
             <div class="border-2 border-blue-800 w-full px-4 py-2 rounded-2xl mb-2">

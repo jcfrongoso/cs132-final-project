@@ -87,8 +87,18 @@
     </p>
     <!-- Turn this into a card later -->
     <ul class="list-outside list-disc ml-10 mb-2">
-        <li><strong>Limited Data Points per Region-Species pair:</strong></li>
-        <li><strong>Limited External Factors for Analysis and Modelling:</strong></li>
+        <li>
+            <strong>Limited Data Points per Region-Species pair:</strong>
+            <p>
+                Currently, the dataset only holds 20 data points for each region-species pair and this causes problems that are relevant for forecasting due to the lack of source knowledge that the model needs to learn from. This leads to overfitting of points and may not provide a significant result.
+            </p>
+        </li>
+        <li>
+            <strong>Limited External Factors for Analysis and Modelling:</strong>
+            <p>
+                Aside from the lack of data points, the features included in the dataset does not fully include all factors that may affect the studied variables. These may lead to wrong correlations due to exogenous variables unaccounted during the analyses.
+            </p>
+        </li>
     </ul>
     
 </div>

@@ -3,7 +3,7 @@
         {
             name:               "Justin Clyde Frongoso",
             profile_picture:    "Frongs",
-            about:              "Hi! I'm Frongs, an aspiring film director.",
+            about:              "An aspiring film director.",
         },
         {
             name:               "Michael Sean Brian Omisol",

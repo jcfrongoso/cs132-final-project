@@ -1,8 +1,9 @@
 <script lang="ts">
+    import { base } from '$app/paths';
     const content = [
         {
             name:               "Justin Clyde Frongoso",
-            profile_picture:    "Frongs",
+            profile_picture:    "frongs",
             about:              "An aspiring film director.",
         },
         {
@@ -21,14 +22,12 @@
 
 <div class="max-w-5xl mx-auto bg-gray-200 p-6 pt-10 rounded-lg">
     <h1 class="mb-4">Team</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mx-auto">
         {#each content as details}
         <div>
-            {#await import(`$lib/images/${details.profile_picture}.png`) then { default: src }}
-            <img {src} class="w-48 mx-auto mb-2" alt="Profile">
+            <img src="{base}/images/{details.profile_picture}.png" class="w-48 mx-auto mb-2" alt="Profile">
             <h3 class="text-center mb-2">{details.name}</h3>
-            <p>{details.about}</p>
-            {/await}
+            <p class="text-center">{details.about}</p>
         </div>
         {/each}
     </div>

@@ -5,16 +5,19 @@
             name:               "Justin Clyde Frongoso",
             profile_picture:    "frongs",
             about:              "An aspiring film director.",
+            github:              "https://github.com/jcfrongoso",
         },
         {
             name:               "Michael Sean Brian Omisol",
-            profile_picture:    "witch",
-            about:              "Whatever you do, do not have 6+ projects at the end of your senior year.",
+            profile_picture:    "omi",
+            about:              "Whatever you do, <strong>do not have 6+ projects</strong> at the end of your senior year.",
+            github:              "https://github.com/FlamingHerb",
         },
         {
             name:               "Eugene Kasilag",
-            profile_picture:    "teehee",
-            about:              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel facilisis lorem. Aenean tincidunt nisl felis, in egestas lectus tincidunt quis. Morbi suscipit at lacus eu viverra. Phasellus volutpat pellentesque ligula, quis imperdiet odio faucibus nec. Curabitur at vulputate leo. Nullam id. ",
+            profile_picture:    "kasilag",
+            about:              "A bit too cool and mysterious.",
+            github:              "https://github.com/epkasilag1",
         },
     ];
 
@@ -25,9 +28,16 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mx-auto">
         {#each content as details}
         <div>
-            <img src="{base}/images/{details.profile_picture}.png" class="w-48 mx-auto mb-2" alt="Profile">
+            <!-- Social Media -->
+            <img src="{base}/images/{details.profile_picture}.png" class="w-48 mx-auto mb-2 rounded-2xl border-2 border-gray-800" alt="Profile">
+            <div class="text-center mx-auto my-2">
+                <!-- svelte-ignore a11y_consider_explicit_label -->
+                <a target="_blank" rel="noreferrer" class="hover:text-blue-500 transition duration-150" href="{details.github}">
+                    <i class="bi bi-github text-3xl"></i>
+                </a>
+            </div>
             <h3 class="text-center mb-2">{details.name}</h3>
-            <p class="text-center">{details.about}</p>
+            <p class="text-center">{@html details.about}</p>
         </div>
         {/each}
     </div>
